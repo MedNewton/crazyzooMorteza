@@ -1,0 +1,5678 @@
+@font-face {
+  font-family: Chaloops;
+  src: url(/src//assets/fonts/Adieu-Bold.ttf);
+}
+
+@font-face {
+  font-family: UbuntuTitling-Bold;
+  src: url(/src//assets/fonts/UbuntuTitling-Bold.ttf);
+}
+
+@font-face {
+  font-family: Josephine;
+  src: url(/src//assets/fonts/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Circular;
+  src: url(/src//assets/fonts/FontsFree-Net-Circular-Std-Bold.ttf);
+}
+
+@font-face {
+  font-family: CircularMedium;
+  src: url(/src//assets/fonts/FontsFree-Net-Circular-Std-Medium.ttf);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  /*background-color: hsl(147, 85%, 26%) !important;*/
+  background: black !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.headerWrapper {
+  width: 100vw;
+  height: fit-content;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  background-color: rgba(0,0,0, 0.95);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5% 0px 0.6% 0px;
+  box-shadow: 0px 10px 20px 5px #000000;
+  position: relative;
+  z-index: 99999;
+}
+
+.introSubtitle{
+  font-family: "CircularMedium";
+  font-size: 2em;
+  color: #86ffa1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5%;
+  background: linear-gradient( 120deg, var(--color-one), var(--color-two), var(--color-three), var(--color-one) ) 0 0 / var(--bg-size) 100%;
+  animation: move-bg 15s infinite linear;
+}
+
+#logo_header {
+  height: 8vh !important;
+  width: auto;
+}
+
+.logoWrapper {
+  padding: 0px;
+  width: fit-content;
+  margin-right: 10vw;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30vw;
+}
+
+.main-nav {
+  position: relative !important;
+  width: fit-content;
+  background-color: rgba(2,2,2, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-nav .sub-menu li a {
+  font-family: "Chaloops" !important;
+  font-size: 1em !important;
+}
+
+.main-nav .sub-menu li a:hover {
+  color: #0a7b3d !important;
+}
+
+.main-nav .sub-menu li a::after {
+  color: #0a7b3d !important;
+  background-color: #0a7b3d !important;
+}
+
+.main-nav > ul > li > a {
+  font-family: "Circular";
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.main-nav > ul > li > a:active {
+  color: #093011;
+}
+
+.ctaWrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.ctaWrapper span {
+  border-color: transparent !important;
+}
+
+.ctaWrapper span div {
+  border-color: transparent !important;
+}
+
+#dappLink {
+  width: 80%;
+}
+
+.dappCTA {
+  cursor: pointer;
+  width: 80%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  background-color: #b4dc83;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Chaloops";
+  color: #fff;
+  text-shadow: 1px 1px 5px #fff;
+  font-size: 1.2em;
+  box-shadow: 0px 0px 20px #b4dc83;
+}
+
+.css-hli19k {
+  background: #b4dc82 !important;
+  box-shadow: -1px 0px 19px #b4dc82 !important;
+  border-radius: 11px !important;
+  border: solid 1px transparent !important;
+}
+
+.css-hli19k:hover {
+  background: #b4dc82 !important;
+  box-shadow: -1px 0px 19px #b4dc82 !important;
+  border-width: 0px !important;
+  border-radius: 11px !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+.css-hli19k:active {
+  background: #b4dc82 !important;
+  box-shadow: -1px 0px 19px #b4dc82 !important;
+  border-width: 0px !important;
+  border-radius: 11px !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+.css-hli19k:focus {
+  background: #b4dc82 !important;
+  box-shadow: -1px 0px 19px #b4dc82 !important;
+  border-width: 0px !important;
+  border-radius: 11px !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+#menu\:\:r0\:\:popper {
+  border-width: 0px !important;
+}
+
+.css-0 {
+  border-width: 0px !important;
+}
+
+.css-cq510v {
+  background: #b4dc82 !important;
+  border-width: 0px !important;
+}
+
+.css-cq510v li {
+  font-family: "Chaloops";
+}
+
+.css-sdimlt {
+  background-color: #b4db82 !important;
+  border-width: 0px !important;
+}
+
+.css-vh8qhu {
+  font-family: "Chaloops" !important;
+  background-color: transparent !important;
+}
+
+w3m-text {
+  font-family: "Chaloops" !important;
+}
+
+.mainslider {
+  position: relative;
+  margin-top: -10vh !important;
+}
+
+.mainslider,
+.swiper {
+  max-height: 100vh !important;
+}
+
+.heading {
+  font-family: "Chaloops";
+  font-size: 4em !important;
+  margin-top: 5% !important;
+  position: relative;
+  z-index: 9999;
+}
+
+.newsletterWrapper {
+  width: 37vw;
+  height: 4vw;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(7.5px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  border-radius: 15px;
+}
+
+.newsletterInputWrapper {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.newsletterBtnWrapper {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletterInputs {
+  height: 3.5vw !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-family: "UbuntuTitling-bold";
+  font-weight: 400;
+  font-size: 1em !important;
+  color: #fff !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-width: 0px !important;
+}
+
+.newsletterInputs::placeholder {
+  color: #fff !important;
+  font-size: 1em !important;
+}
+
+.newsletterInputs:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.newsletterInputs::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.subscribeBtn {
+  width: fit-content;
+  padding: 5% 15% 5% 15% !important;
+  background: #b4dc83;
+  box-shadow: 0px 0px 24px #b4dc83;
+  border-radius: 10px;
+  border-width: 0px;
+  font-family: "Chaloops";
+  font-size: 1.3em !important;
+  float: right;
+}
+
+.subscribeBtn:hover {
+  background: #b4dc83;
+  box-shadow: 0px 0px 24px #b4dc83;
+  border-radius: 10px;
+  border-width: 0px;
+  color: #ebebeb;
+}
+
+.greenShadow {
+  height: 30vh;
+  background: linear-gradient(0deg, #0a7b3d 6.86%, rgba(62, 137, 77, 0) 96.17%);
+  padding: 0px !important;
+}
+
+.qualities {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualitiesWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 90vw;
+}
+
+.quality {
+  background: linear-gradient(142.3deg, #00ac33 5.01%, #0a7b3d 94.79%);
+  box-shadow: 0px 0px 15px rgba(0, 74, 32, 0.5);
+  border-radius: 14px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  padding-left: 2% !important;
+  padding-right: 1% !important;
+  height: 47vh !important;
+}
+
+.qualityTitle {
+  color: #6cf16c;
+  font-family: "Circular";
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4% 0% 0%;
+  text-align: left;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.qualityDescription {
+  font-family: "CircularMedium";
+  font-size: 1em;
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 2% !important;
+}
+
+/* Minting Page */
+
+.mintinPageContainer {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  position: relative;
+  z-index: 0;
+}
+
+.adminPage {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  position: relative;
+  z-index: 0;
+}
+
+.mintingLeaves1 {
+  width: 40%;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+}
+
+.mintingLeaves5 {
+  width: 45%;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  left: 0vw;
+  bottom: -50vh;
+}
+
+.mintingLeaves8 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: -10vw;
+  bottom: -5vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 99;
+}
+
+.mintingLeaves7 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: -5vw;
+  top: -5vh;
+  z-index: 0;
+}
+
+.mintingBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  width: 50vw;
+  height: 50vh;
+  z-index: 99;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.mintingGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px;
+  z-index: 90;
+}
+
+.mintingBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -3%;
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.mintingFormWrapper {
+  height: 95%;
+  width: 95%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
+.mintDisplayWrapper {
+  height: auto;
+  padding: 0px;
+}
+
+.mintInputsWrapper {
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.mintPreviewBox {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 25px;
+  padding: 5%;
+}
+
+.mintDisplayImage {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px;
+}
+
+.NFTPriceBox {
+  width: 90%;
+  height: fit-content;
+  padding: 3% 3%;
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NFTPriceLabel {
+  float: left;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  margin-bottom: 0px !important;
+}
+
+.NFTPrice {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px !important;
+  width: 100%;
+}
+
+.mintedProgressBarWrapper {
+  width: 90%;
+  margin-top: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mintedProgressBarLabelWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mintedLabel {
+  float: left;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-bottom: 5px !important;
+}
+
+.mintedData {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px !important;
+}
+
+#mintedProgressBar {
+  background-color: rgba(180, 220, 130, 0.2);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 1.5vh;
+}
+
+#mintedProgressBar .progress-bar {
+  background-color: #b4dc82;
+  height: 100%;
+}
+
+.animalsProgressBarLabelWrapper {
+  margin-top: 7%;
+}
+
+.animalsProgressBarWrapper {
+  width: 90%;
+  margin-top: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animalsProgressBarLabelWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animalsLabel {
+  float: left;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-bottom: 5px !important;
+}
+
+.animalsData {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px !important;
+}
+
+#animalsProgressBar {
+  background-color: rgba(180, 220, 130, 0.2);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 1.5vh;
+}
+
+#animalsProgressBar .progress-bar {
+  background-color: #b4dc82;
+  height: 100%;
+}
+
+.totalPriceLabelWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+
+.totalPriceLabel {
+  float: left;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-bottom: 5px !important;
+  padding-top: 3%;
+}
+
+.totalPriceData {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  border: solid 1px #fff;
+  padding: 3% 5%;
+  border-radius: 10px;
+  margin-top: 0px !important;
+}
+
+.mintBtnWrapper {
+  width: 100%;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+}
+
+.mintBtn {
+  width: 100% !important;
+  min-width: 100%;
+  height: 100%;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  padding-top: 4% !important;
+  padding-bottom: 7% !important;
+}
+
+.mintBtn:hover {
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px;
+  background: #b4dc82;
+  color: rgb(226, 226, 226);
+}
+
+/* Swapping page */
+
+.swappingPageContainer {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  position: relative;
+  z-index: 0;
+}
+
+.swappingLeaves1 {
+  width: 45%;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+}
+
+.swappingLeaves5 {
+  width: 45%;
+  height: auto;
+  z-index: 5;
+  position: absolute;
+  left: 0vw;
+  bottom: -60vh;
+}
+
+.swappingLeaves8 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0vw;
+  bottom: -60vh;
+  z-index: 99;
+}
+
+.swappingLeaves7 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: -5vw;
+  top: -5vh;
+  z-index: 0;
+}
+
+.swappingGorilla {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  left: 5vw;
+  z-index: 0;
+}
+
+.swappingRhino {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  right: 5vw;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+.swappingBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: fit-content;
+
+  z-index: 99;
+  padding: 0px !important;
+
+  margin: 0px !important;
+}
+
+.swappingFormWrapper {
+  height: 95%;
+  width: 95%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-content: flex-start !important;
+}
+
+.swapInBox {
+  border: 1px solid #b4dc82;
+  border-radius: 7px;
+  height: fit-content;
+  padding: 2% 2%;
+  width: 100%;
+}
+
+.swapInBoxTitle {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+}
+
+.swapInFormWrapper {
+  width: 100%;
+  padding: 0px;
+}
+
+.swapInFormWrapper .dropdown {
+  width: fit-content !important;
+  float: left;
+  background-color: transparent !important;
+  border-color: #fff !important;
+  color: #fff;
+  padding-top: 2% !important;
+  padding-bottom: 6% !important;
+  padding-left: 2% !important;
+  height: 10px !important;
+  max-height: fit-content !important;
+  min-height: fit-content !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.swapInFormWrapper .divider {
+  background-color: transparent !important;
+  color: #fff !important;
+  font-family: "Chaloops";
+  font-size: 0.7em !important;
+  display: flex;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.swapInFormWrapper .divider img {
+  height: 3vh !important;
+  width: auto !important;
+  margin-right: 5px !important;
+}
+
+.swapInFormWrapper .dropdown.icon {
+  display: none !important;
+}
+
+.swapInFormWrapper .visible.menu.transition {
+  width: 10vw !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.swapInFormWrapper .visible.menu.transition .item {
+  font-family: "Chaloops";
+  border-radius: 10px !important;
+}
+
+.maxswapIn {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 0.7em;
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  padding: 2px 3%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.swapInInput {
+  width: 30px !important;
+  height: 10px !important;
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  float: right;
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+  margin-right: 5px;
+  text-align: center !important;
+}
+
+.swapInInput::placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapInInput:-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapInInput::-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapOutBox {
+  border: 1px solid #b4dc82;
+  border-radius: 7px;
+  height: fit-content;
+  padding: 2% 2%;
+  width: 100%;
+  margin-top: 5% !important;
+}
+
+.swapOutBoxTitle {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+}
+
+.swapOutFormWrapper {
+  width: 100%;
+  padding: 0px;
+}
+
+.swapOutFormWrapper .dropdown {
+  width: fit-content !important;
+  float: left;
+  background-color: transparent !important;
+  border-color: #fff !important;
+  color: #fff;
+  padding-top: 2% !important;
+  padding-bottom: 6% !important;
+  padding-left: 2% !important;
+  height: 10px !important;
+  max-height: fit-content !important;
+  min-height: fit-content !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.swapOutFormWrapper .divider {
+  background-color: transparent !important;
+  color: #fff !important;
+  font-family: "Chaloops";
+  font-size: 0.7em !important;
+  display: flex;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.swapOutFormWrapper .divider img {
+  height: 3vh !important;
+  width: auto !important;
+  margin-right: 5px !important;
+}
+
+.swapOutFormWrapper .dropdown.icon {
+  display: none !important;
+}
+
+.swapOutFormWrapper .visible.menu.transition {
+  width: 10vw !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.swapOutFormWrapper .visible.menu.transition .item {
+  font-family: "Chaloops";
+  border-radius: 10px !important;
+}
+
+.maxswapOut {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 0.7em;
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  padding: 2px 3%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.swapOutInput {
+  width: 30px !important;
+  height: 10px !important;
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  float: right;
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+  margin-right: 5px;
+  text-align: center !important;
+}
+
+.swapOutInput::placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapOutInput:-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapOutInput::-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.swapBtn {
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px !important;
+  width: 100%;
+  margin-top: 3%;
+  font-family: "Chaloops";
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+  margin-bottom: 5% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.swapBtn:hover {
+  border-width: 0px;
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  color: #e0e0e0;
+}
+
+.swappingV3GlassBox {
+  width: 100%;
+  height: fit-content !important;
+  margin: 2% 0px 0px 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swappingV3BoxTitle {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  float: left;
+  margin-bottom: 0px !important;
+}
+
+.swappingV3Data {
+  margin-top: 0px !important;
+  font-family: "UbuntuTitling-Bold";
+  color: #fff;
+  font-size: 0.8em;
+  float: right;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  padding: 2% 5%;
+}
+
+/* Referral page */
+
+.referralPageContainer {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.referralLeaves1 {
+  width: 35%;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  left: 0vw;
+  top: -40vh;
+}
+
+.referralLeaves5 {
+  width: 45%;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  left: -5vw;
+  bottom: -50vh;
+  transform: rotate(-10deg);
+}
+
+.referralLeaves8 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: -10vw;
+  bottom: -5vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 99;
+}
+
+.referralLeaves7 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: -5vw;
+  top: -5vh;
+  z-index: 0;
+}
+
+.referralRhino {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  z-index: 0;
+}
+
+.referralBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: fit-content;
+  z-index: 99;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.referralBoxLeft {
+  padding: 3% !important;
+}
+
+.referralBoxRight {
+  padding: 3% 3% 4% 0px;
+}
+
+.referralCodeGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 0% 0% 0%;
+}
+
+.referralCodeBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -7%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+}
+
+.referralCodeFormWrapper {
+  height: 95%;
+  width: 95%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
+.referralCodeBtnWrapper {
+  width: 100%;
+  height: 20px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.referralCodeBtn {
+  width: 100% !important;
+  min-width: 100%;
+  height: 100%;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 10px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  padding-top: 4% !important;
+  padding-bottom: 7% !important;
+}
+
+.referralCodeBtn:hover {
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px;
+  background: #b4dc82;
+  color: rgb(226, 226, 226);
+}
+
+.referralCodeInputWrapper {
+  height: 100%;
+  width: 100%;
+  padding: 2% 0px;
+}
+
+.referralCodeBox {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 3%;
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.referralCode {
+  float: left;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.6em;
+  margin-bottom: 0px !important;
+}
+
+.referralCodeSmallCopyBtn {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px !important;
+  background-color: #b4db82;
+  padding: 1% 10%;
+  border-radius: 10px;
+}
+
+.referralRewardsGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 2% 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 4% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referralRewardsWrapper {
+  height: fit-content;
+  border: solid 1px #b4dc82;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referralRewardsLabel {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.8em;
+  float: left;
+  margin-bottom: 0px !important;
+}
+
+.referralRewards {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  float: right;
+  margin-top: 0px !important;
+}
+
+.referralRewardsWithdrawWrapper {
+  height: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.referralRewardsWithdrawBtn {
+  width: 90% !important;
+  min-width: 90%;
+  height: 100% !important;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  margin: auto !important;
+}
+
+.referralRewardsWithdrawBtn:hover {
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px;
+  background: #b4dc82;
+  color: rgb(226, 226, 226);
+}
+
+.foodGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 2% 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 4% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.foodBoxTitleWrapper {
+  border: solid 1px #b4db82;
+  border-radius: 5px;
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 1%;
+}
+
+.foodBoxTitle {
+  text-align: center;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.9em;
+}
+
+.foodWrapper {
+  height: 100%;
+  padding: 1%;
+}
+
+.foodNameWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.foodDataWrapper {
+  width: 100%;
+  height: fit-content;
+  border: solid 1px #b4db82;
+  border-radius: 5px;
+  padding: 1%;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.foodIcon {
+  width: 20% !important;
+  height: auto;
+}
+
+.foodName {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px;
+  margin-left: 5%;
+}
+
+.foodAmountWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.foodAmount {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  margin-top: 0px;
+  margin-left: 5%;
+}
+
+.feedBtnWrapper {
+  height: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.feedBtn {
+  width: 90% !important;
+  min-width: 90%;
+  height: 100% !important;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  margin: auto !important;
+}
+
+.feedBtn:hover {
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px;
+  background: #b4dc82;
+  color: rgb(226, 226, 226);
+}
+
+.referralHistoryGlassBox {
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 3% 4% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.referralHistoryBoxTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.2em;
+  background-color: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.referralHistoryTH {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 3%;
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referralHistoryTH h5 {
+  text-align: center;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.9em;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.referralHistoryTR {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 3%;
+  overflow: hidden;
+  border: 1px solid #4d9d64;
+  filter: drop-shadow(0px 0px 24px #4d9d64);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.referralHistoryTR h5 {
+  text-align: center;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.9em;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.THIcon {
+  opacity: 0;
+}
+
+.treasuryPageContainer {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  position: relative;
+  z-index: 0;
+}
+
+.treasuryLeaves1 {
+  width: 35%;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+}
+
+.treasuryLeaves5 {
+  width: 45%;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  left: -5vw;
+  bottom: -60vh;
+  transform: rotate(-10deg);
+}
+
+.treasuryLeaves8 {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  right: -5vw;
+  bottom: -30vh;
+  z-index: 99;
+}
+
+.treasuryLeaves7 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: -5vw;
+  top: -5vh;
+  z-index: 0;
+}
+
+.treasuryLemur {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  z-index: 0;
+}
+
+.treasuryRhino {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  bottom: 38vh;
+  right: 0vw;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+.treasuryBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 70vh;
+  z-index: 99;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.treasureGlassBox {
+  width: 100%;
+  height: 30%;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px;
+  z-index: 90;
+}
+
+.treasureBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -2%;
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.treasureDataWrapper {
+  width: 90%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.treasureDataGlassBox {
+  width: 33%;
+  height: 50%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #82bc7c;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.treasureDataBox {
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 10px;
+  width: 95%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2%;
+}
+
+.treasureDataLabel {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 90%;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.treasureData {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 100%;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.treasureAssetsGlassBox {
+  width: 100%;
+  height: 50%;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-right: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px;
+  z-index: 90;
+}
+
+.treasureAssetsBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -2%;
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.treasureAssetsDataWrapper {
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.treasureAssetsDataGlassBox {
+  width: 32%;
+  height: 80%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #82bc7c;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 1%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.BTCBTreasuryTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1em;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid #b4dc82;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  width: 100%;
+  padding: 2% 2%;
+  text-align: right;
+}
+
+.checkAssetBtn {
+  width: 100% !important;
+  min-width: 100%;
+  height: 20%;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  padding-top: 4% !important;
+  padding-bottom: 7% !important;
+  margin-top: 5%;
+}
+
+.checkAssetBtn:hover {
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px;
+  background: #b4dc82;
+  color: rgb(226, 226, 226);
+}
+
+.balanceWrapper {
+  padding: 0px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balanceTitle {
+  font-family: "Chaloops";
+  font-size: 1em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  color: #fff;
+}
+
+.balanceData {
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1.1em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  color: #fff;
+}
+
+/* Presale page */
+
+.presalePageContainer {
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  position: relative;
+  z-index: 0;
+}
+
+.web3modal-modal-lightbox.web3modal-modal-lightbox {
+  z-index: 10;
+}
+
+.presaleLeaves1 {
+  width: 40%;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  left: 0vw;
+  top: -40vh;
+}
+
+.presaleLeaves5 {
+  width: 40%;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  left: -5vw;
+  bottom: -10vh;
+
+  transform: scale(-1) rotate(10deg);
+}
+
+.presaleLeaves8 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: -5vw;
+  bottom: -5vh;
+  -webkit-transform: scaleY(-1) scaleX(-1);
+  transform: scaleX(-1) scaleY(-1);
+
+  z-index: 0;
+}
+
+.presaleLeaves7 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: -10vw;
+  top: -15vh;
+  transform: scaleY(-1) scaleX(-1);
+  z-index: 10;
+}
+
+.referralLemur {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  right: -5vw;
+  z-index: 10;
+  transform: scaleX(-1);
+}
+
+.referralGorilla {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 35vh;
+  left: -5vw;
+  z-index: 10;
+  transform: rotate(50deg);
+}
+
+.referralRhino {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: -10vh;
+  left: 55vw;
+  z-index: 0;
+  transform: scaleY(-1) rotate(-50deg);
+}
+
+.presaleBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: fit-content;
+  z-index: 99;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.presaleBoxLeft {
+  padding: 3% !important;
+}
+
+.presaleBoxRight {
+  padding: 3% 3% 4% 0px;
+}
+
+.presaleWelcomeGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 5% 2% 5%;
+}
+
+.presaleWelcomeBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5% 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -7%;
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.presaleWelcomeGlassBox p {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  padding: 5% 5% 0px 5%;
+}
+
+.presaleWelcomeGlassBox .outlinedParagraph {
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  padding: 3%;
+  border: 1px solid #b4dc82;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+.presaleAddressGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 2% 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 4% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presaleAddressLabel {
+  color: #313131;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 0.8em;
+  float: left;
+  margin-bottom: 0px !important;
+}
+
+.presaleWhitepaperLabel {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  float: left;
+  margin-bottom: 0px !important;
+}
+
+.presaleWhitepaperBtn {
+  width: 30% !important;
+  min-width: 30%;
+  height: 100% !important;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  font-size: 0.7em;
+}
+
+.presaleWhitepaperWrapper {
+  height: fit-content;
+  border: solid 1px #b4dc82;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presaleSocialLinksWrapper {
+  height: fit-content;
+  border: solid 1px #b4dc82;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.presaleSocialBtn {
+  width: fit-content !important;
+  height: 100% !important;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  font-family: "Chaloops";
+  color: #fff;
+  border-width: 0px;
+  line-height: 0.6em;
+  padding: 10% !important;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.presaleSocialBtnsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.privateSaleGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 5% 2% 5%;
+}
+
+.privateSaleBoxTitleWrapper {
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 1% 5% 1% 5%;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -7%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+}
+
+.countdownWrapper {
+  width: 90%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.Countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.Countdown h5 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-family: "Chaloops";
+  font-size: 1.2em;
+  color: #fff;
+  background: #b4dc82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 5px;
+  padding: 2vh 3vh;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#privateSaleProgressBar {
+  background-color: rgba(180, 220, 130, 0.2);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 1.5vh;
+  margin-bottom: 2%;
+  margin-top: 8%;
+}
+
+#privateSaleProgressBar .progress-bar {
+  background-color: rgba(180, 220, 130, 1);
+}
+
+.privateSaleFrom {
+  float: left;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.privateSaleTo {
+  float: right;
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.privateSaleInputWrapper {
+  width: 100%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  padding: 2% 3%;
+  border: 1px solid #b4dc82;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privateSaleInput {
+  height: 10px !important;
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+  float: right;
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+  margin-right: 5px;
+  border-width: 0px !important;
+}
+
+.privateSaleInput::placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.privateSaleInput:-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.privateSaleInput::-ms-input-placeholder {
+  font-family: "UbuntuTitling-Bold" !important;
+  color: #fff !important;
+  font-size: 0.9em !important;
+}
+
+.privateSaleBuyBtn {
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px !important;
+  width: 100%;
+  font-family: "Chaloops";
+  padding-top: 1.5% !important;
+  padding-bottom: 1.5% !important;
+  margin-bottom: 5% !important;
+}
+
+.presalePriceGlassBox {
+  width: 100%;
+  height: fit-content;
+  margin: 2% 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+  z-index: 90;
+  padding: 2% 4% 2% 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presaleTokenPrice {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 3%;
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presaleTokenPriceLabel {
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.presaleTokenPriceData {
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  width: fit-content!important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  float: right !important;
+}
+
+.hdlsz{
+  margin-bottom: 0px !important;
+}
+
+
+.presaleMinMaxWrapper {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2%;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+
+.presaleMin {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 50% !important;
+}
+
+.presaleMax {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 50% !important;
+}
+
+/*Landing page*/
+
+.introductionWrapper {
+  width: 100% !important;
+  height: fit-content;
+  margin: 0px !important;
+  padding: 8% 6%;
+  position: relative;
+  z-index: 90;
+}
+
+.createIcon {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.introductionTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 2em;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  --color-one: #00912b;
+  --color-two: #5bcf5b;
+  --color-three: #79ffa1;
+  --bg-size: 400%;
+  background: linear-gradient(
+      120deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+
+  animation: move-bg 15s infinite linear;
+  box-shadow: 0px 14px 15px rgba(42, 119, 58, 0.18);
+  border-radius: 18px;
+}
+
+.introductionInnerWrapper {
+  height: 100%;
+  margin: 0px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.introductionTextWrapper {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introductionImageWrapper {
+  padding: 0% 2%;
+}
+
+.introductionPara1 {
+  color: #fff;
+  font-family: "Circular";
+  font-size: 1.1em;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4%;
+}
+
+.introductionPara2Wrapper {
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6% 3%;
+  background: linear-gradient(142.3deg, #00ac33 5.01%, #0a7b3d 94.79%);
+  border-radius: 15px;
+}
+
+.introductionPara2Wrapper:nth-child(1) {
+  margin-bottom: 2%;
+}
+
+.introductionPara2Wrapper:nth-child(2) {
+  margin-top: 2%;
+}
+
+.introductionPara2 {
+  color: #fff;
+  font-family: "CircularMedium";
+  font-size: 1.1em;
+}
+
+.introducionImage {
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.introVid {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0px !important;
+}
+
+.MintingIntroSection{
+  width: 100% !important;
+  height: fit-content;
+  margin: 0px !important;
+  padding: 8% 10% 8% 10%;
+  position: relative;
+  z-index: 90;
+}
+
+.MintingIntroSectionTitleBox{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.MintingIntroSectionTitleBox div{
+  height: 1.5em;
+  width: 3px;
+  margin-right: 1%;
+  --color-one: #00912b;
+  --color-two: #5bcf5b;
+  --color-three: #79ffa1;
+  --bg-size: 400%;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  animation: move-bg 8s infinite linear;
+}
+
+.MintingIntroSectionTitleBox h5{
+  font-family: "CircularMedium";
+  font-size: 0.9em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.MintingIntroSectionTextBox{
+  margin-top: 2%;
+}
+
+.MintingIntroSectionTextBoxTitle{
+  font-family: "CircularMedium";
+  font-size: 2.3em;
+  --color-one: #00912b;
+  --color-two: #5bcf5b;
+  --color-three: #79ffa1;
+  --bg-size: 400%;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+.MintingIntroSectionTextBoxText{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 70%;
+}
+
+.MintingIntroSectionIconsBox{
+  margin-top: 1%;
+  width: fit-content;
+  padding: 1% 10%;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.MintingIntroSectionIconBox{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0% 5%;
+    width: 25%;
+}
+
+.MintingIntroSectionIconBox:nth-child(2){
+  padding-top: 10%;
+}
+
+.MintingIntroSectionIconBox:nth-child(4){
+  padding-top: 10%;
+}
+
+.MintingIntroSectionIconBoxIcon{
+  margin-bottom: 2%;
+  
+}
+
+.MintingIntroSectionIconBoxTitle{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1.1em;
+
+}
+
+.MintingIntroSectionIconBoxText{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 0px !important;
+}
+
+.tokenomicsWrapper {
+  width: 100% !important;
+  height: fit-content;
+  margin: 0px !important;
+  padding: 0% 0px 5% 0px;
+
+  position: relative;
+  z-index: 90;
+}
+
+.tokenomicsTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.tokenomicsChartWrapper {
+  width: 90%;
+  height: fit-content;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -5%;
+}
+
+.tokenomicsChart {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crazyZooNFTsWrapper {
+  width: 100% !important;
+  height: fit-content;
+  background-color: #003811 !important;
+  margin: 0% 0% 0% 0px !important;
+}
+
+.crazyZooNFTsInner {
+  background: #0a6f37;
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  padding: 5% 6% 5% 6%;
+}
+
+.crazyZooNFTsTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  background: linear-gradient(91.63deg, #004916 2.72%, #01672d 97.14%);
+  box-shadow: 0px 14px 15px rgba(42, 119, 58, 0.18);
+  border-radius: 18px;
+}
+
+.crazyZooNFTsSubtitle {
+  color: #fff;
+  font-family: "Josephine";
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0% 20%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.crazyZooNFTsListWrapper {
+  width: 70%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.crazyZooNFTsListItem {
+  border: solid 1px #fff;
+  border-radius: 10px;
+  height: 40vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.nftLemur {
+  background-image: url(/src/assets/images/landing/CrazyZoo_Lemur_Neutro.avif);
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nftRhino {
+  background-image: url(/src/assets/images/landing/CrazyZoo_Rhino_Neutro.avif);
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nftGorilla {
+  background-image: url(/src/assets/images/landing/CrazyZoo_Gorilla_Neutro.avif);
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.crazyZooNFTsListItemTitleWrapper {
+  height: 20%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  padding: 0px 3%;
+  background: rgba(10, 123, 61, 0.02);
+  border: 1px solid #fff;
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crazyZooNFTsListItemTitle {
+  font-family: "Chaloops";
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.crazyZooNFTsListItemAmount {
+  font-family: "Chaloops";
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.crazyZooNFTSCostsWrapper {
+  width: 70%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.crazyZooNFTsCostsItem {
+  height: fit-content;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.crazyZooNFTsCost {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.2em;
+  background: rgba(62, 137, 77, 0.13);
+  box-shadow: 0px 5px 15px rgba(237, 226, 200, 0.42);
+  border-radius: 8px;
+  padding: 5% 15%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #fff;
+}
+
+.learnMoreBtn {
+  background: #fff;
+  box-shadow: 0px 0px 24px #fff;
+  border-radius: 7px;
+  font-family: "Chaloops";
+  color: #030303;
+  font-size: 1em;
+  border-width: 0px !important;
+  width: 16%;
+  margin-left: 42% !important;
+  margin-right: 42% !important;
+  margin-top: 5%;
+}
+
+.learnMoreBtn:hover {
+  background: #b5dd82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 7px;
+  font-family: "Chaloops";
+  color: #d1d1d1;
+  font-size: 1em;
+  border-width: 0px !important;
+  width: 16%;
+  margin-left: 42% !important;
+  margin-right: 42% !important;
+}
+
+.learnMoreBtn:focus {
+  background: #b5dd82;
+  box-shadow: 0px 0px 24px #b4dc82;
+  border-radius: 7px;
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1em;
+  border-width: 0px !important;
+  width: 16%;
+  margin-left: 42% !important;
+  margin-right: 42% !important;
+}
+
+.roadmapWrapper {
+  width: 100% !important;
+  height: fit-content;
+  background-color: hsl(147, 85%, 26%);
+  margin: -10vh 0px 0px 0px !important;
+  padding: 15vh 0px 5% 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.roadmapTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.roadmapItemsRow {
+  margin: 5% 0px 0px 0px !important;
+  padding: 0% 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 100;
+}
+
+.roadmapItem {
+  height: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.notVisible {
+  opacity: 0 !important;
+}
+
+.roadmapItemStepBorder {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmapItemStepFill {
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmapItemGlassBox {
+  height: 100%;
+  width: 100%;
+  padding: 5% 3%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmapItemTitleBox {
+  background-color: #fff;
+  box-shadow: 0px 0px 19px rgba(255, 255, 255, 0.66);
+  border-radius: 15px;
+  height: fit-content;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 1%;
+}
+
+.roadmapItemTitleBoxInactive {
+  background-color: transparent;
+  border-radius: 15px;
+  border: solid 1px #fff;
+  height: fit-content;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 1%;
+}
+
+.roadmapItemTitle {
+  font-family: "Chaloops";
+  color: #0a7b3d;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.roadmapItemTitleInactive {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.roadmapItemDataWrapper {
+  width: 100%;
+  height: fit-content;
+  margin-top: 2%;
+}
+
+.roadmapItemDataRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.roadmapItemData {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.whiteAnimalsBackground {
+  margin-top: -50%;
+  z-index: 100;
+  position: relative;
+}
+
+.foragingWrapper {
+  width: 100% !important;
+  height: fit-content;
+  background-color: hsl(147, 85%, 26%);
+  margin: 0% 0px 0px 0px !important;
+}
+
+.foragingInner {
+  background: #fcedca;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  width: 100%;
+  height: fit-content;
+  margin: -10% 0px 0px 0px;
+  padding: 2% 6%;
+  position: relative;
+  z-index: 999;
+}
+
+.foragingTitle {
+  color: #0a7b3d;
+  font-family: "Chaloops";
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px #0a7b3d;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.foragingSubtitle {
+  color: #0a7b3d;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0% 20%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.foragingSubtitle2Wrapper {
+  background: rgba(62, 137, 77, 0.1);
+  border-radius: 18px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foragingSubtitle2 {
+  color: #0a7b3d;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.landingPresaleWrapper {
+  width: 100% !important;
+  height: fit-content;
+  background-color: hsl(147, 85%, 26%);
+  margin: 0px !important;
+  padding: 3% 15% 10% 15%;
+  z-index: 90;
+  position: relative;
+}
+
+.landingPresaleTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 1.5em;
+  text-align: center;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  padding: 1.5% 6%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.landingPresaleItemRow {
+  height: fit-content;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.activeRow {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.listingRow {
+  margin-top: 5%;
+}
+
+.presaleItemTitleWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.presaleItemDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
+
+.presaleItemDescriptionWrapper-Listing {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2%;
+}
+
+.goldenPawCoin {
+  height: 5vh !important;
+  width: auto !important;
+}
+
+.presaleItemTitle {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 10px;
+}
+
+.presaleItemDescriptionTitle {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.1em;
+  margin-top: 0px !important;
+  margin-bottom: 10%;
+}
+
+.presaleItemDescription {
+  font-family: "UbuntuTitling-Bold";
+  color: #fff;
+  font-size: 1em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.LandingPageFooterWrapper {
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2%;
+  position: relative;
+}
+
+.landingPageFooterBackground {
+  width: 100vw;
+  margin-top: -60%; /*-60%*/
+  height: auto;
+  position: relative;
+  z-index: 110;
+  filter: brightness(0);
+}
+
+.noScrolling {
+  overflow: hidden !important;
+}
+
+.landingPageFooterIconsWrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.landingPageFooterIcon {
+  width: 4vh;
+  height: auto;
+  filter: brightness(0) invert(1);
+  margin-right: 3%;
+}
+
+.zooCopyrights {
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  font-family: "CircularMedium";
+}
+
+/* Landing page leaves */
+
+/* Footer Leaves */
+
+.footerLeaves {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  left: -10vw;
+  z-index: 9999;
+}
+
+/* Presale Leaves */
+
+.landingPresaleLeaves2 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  top: -5%;
+}
+
+.landingPresaleLeaves1 {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: -25%;
+}
+
+.roadmapLeaves1 {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  bottom: -20%;
+}
+
+.roadmapLeaves2 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: -10%;
+  top: 0%;
+  z-index: 10;
+}
+
+.roadmapLeaves3 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: -35%;
+  transform: scaleX(-1) scaleY(-1);
+  z-index: 10;
+}
+
+.tokenomicsLeaves1 {
+  width: 65%;
+  height: auto;
+  position: absolute;
+  left: -10%;
+  top: -20%;
+  z-index: 10;
+}
+
+.tokenomicsLeaves2 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: -32%;
+  transform: rotate(10deg);
+  z-index: 10;
+}
+
+.introLeaves1 {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  top: -20%;
+  z-index: 10;
+}
+
+.introLeaves2 {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  right: -20%;
+  top: -60%;
+  transform: scaleX(-1) rotate(25deg);
+}
+
+.introRhino {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  top: -20%;
+  transform: scaleX(-1);
+  z-index: 100;
+}
+
+.createLeaves1 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  bottom: -60%;
+  z-index: 99;
+}
+
+.createLeaves2 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  bottom: -15%;
+  transform: scaleX(-1);
+  z-index: 99;
+}
+
+.heroLeaves1 {
+  width: 65%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  top: -25%;
+  z-index: 70;
+}
+
+.heroLeaves2 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 99;
+}
+
+.heroLeaves3 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: -5%;
+  top: 20%;
+  z-index: 99;
+  transform: scaleX(-1) rotate(30deg);
+}
+
+.heroLeaves4 {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  right: -15%;
+  top: 20%;
+  z-index: 100;
+  transform: scaleX(-1) rotate(356deg);
+}
+
+.heroGorilla {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  z-index: 90;
+  transform: rotate(10deg);
+}
+
+.heroLemur {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  z-index: 90;
+  transform: scaleX(-1);
+}
+
+/* Staking */
+
+.stakingBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  height: 80vh;
+  z-index: 99;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.stakingRhino {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  z-index: 0;
+}
+
+.stakingLemur {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  bottom: 38vh;
+  right: 0vw;
+  transform: scaleX(-1) rotate(10deg);
+  z-index: 0;
+}
+
+.stakingTopWrapper {
+  height: 65%;
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px !important;
+}
+
+.stakingBottomWrapper {
+  height: 35%;
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.stakingTopLeftWrapper {
+  height: 100%;
+}
+
+.stakingToprightWrapper {
+  height: 100%;
+}
+
+.myNFTsGlassBoxWrapper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myNFTsImageBox {
+  width: 50%;
+  height: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 18px;
+  position: relative;
+  z-index: 99;
+}
+
+.myNFTsImageInner1 {
+  width: 80%;
+  height: 80%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 18px;
+  transform: rotate(-6.41deg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.myNFTsImageInner2 {
+  width: 80%;
+  height: 80%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 18px;
+  transform: rotate(10.8deg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.myNFTsImageInnerTextBox {
+  width: 90%;
+  height: fit-content;
+  padding: 2% 5%;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myNFTsImageInnerText {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 0.6em;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.myNFTsGlassBox {
+  width: 100%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(239, 240, 241, 0.1);
+  backdrop-filter: blur(5.5px);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -35%;
+  padding-top: 37%;
+  position: relative;
+  z-index: 90;
+}
+
+.myNFTsGlassBoxTitle {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.myNFTsProgressWrapper {
+  width: 70%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.myNFTsProgressLableWrapper {
+  background: rgba(180, 220, 130, 0.2);
+  border-radius: 50%;
+  height: 2vw;
+  width: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.myNFTProgressLabel {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myNFTSProgressBar {
+  height: 2vw;
+  width: 80%;
+  border-radius: 15px;
+  background: rgba(180, 220, 130, 0.2);
+}
+
+#myNFTSProgressBar .progress-bar {
+  background-color: #b4dc82;
+  height: 2vw;
+  border-radius: 15px;
+}
+
+.myNFTsDataWrapper {
+  width: 70%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.myNFTsDataItemWrapperBordered {
+  width: fit-content;
+  padding: 0px 10%;
+}
+
+.myNFTsDataItemWrapperBordered {
+  width: fit-content;
+  padding: 0px 10%;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.myNFTsData {
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.myNFTsDataLabel {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.myNFTsButtonsWrapper {
+  width: 80%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.MyNFTsFeedBtn {
+  background: #b4dc82;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Chaloops";
+  color: #fff;
+  width: 45%;
+  border-width: 0px !important;
+}
+
+.MyNFTsStakeBtn {
+  background-color: transparent !important;
+  border: solid 1px #b4dc82 !important;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Chaloops";
+  color: #fff;
+  width: 45%;
+}
+
+.animalsGlassBoxWrapper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animalsSliderWrapper {
+  width: 90%;
+  height: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.animalsImageBox {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 18px;
+  position: relative;
+  z-index: 99;
+}
+
+.animalsImageInner {
+  width: 90%;
+  height: 90%;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 0px !important;
+}
+
+.animalImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.animalsPrevBtn {
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  background-color: rgba(180, 220, 130, 1);
+  color: #228850;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.animalsNextBtn {
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  background-color: rgba(180, 220, 130, 1);
+  color: #228850;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#animalProgressBar {
+  height: 2vw;
+  width: 70%;
+  border-radius: 15px;
+  background: rgba(180, 220, 130, 0.2);
+}
+
+#animalProgressBar .progress-bar {
+  background-color: #b4dc82;
+  height: 2vw;
+  border-radius: 15px;
+}
+
+.animalProgressLabel {
+  font-family: "Chaloops";
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animalData {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.animalDataLabel {
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  color: #fff;
+  margin-top: 10% !important;
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+.animalStakedWrapper {
+  width: 90%;
+  height: fit-content;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 5%;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stakedLabel {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  margin: 0px !important;
+}
+
+.staked {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  margin: 0px !important;
+}
+
+.foodBox {
+  width: 100%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(239, 240, 241, 0.1);
+  backdrop-filter: blur(5.5px);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2% 0px !important;
+  padding: 1% 4% 1% 4%;
+}
+
+.foodWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.foodImageWrapper {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: transparent;
+}
+
+.foodImageGlassBox {
+  width: 80%;
+  height: 80%;
+  margin-left: 0px;
+  margin-right: auto;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px;
+}
+
+.foodImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.foodName {
+  font-family: "Chaloops";
+  font-size: 1em;
+  color: #fff;
+  padding: 2% 4%;
+  margin-top: 3%;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  width: 80%;
+  text-align: center;
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 8px;
+}
+
+.foodDataColumn {
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3% 2%;
+}
+
+.foodDataTitle {
+  font-family: "Chaloops";
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+  background: rgba(180, 220, 130, 0.2);
+  border-radius: 6px;
+  padding: 3% 5%;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.foodData {
+  font-family: "Chaloops";
+  font-size: 0.8em;
+  text-align: center;
+  color: #fff;
+  margin-top: 3% !important;
+  margin-bottom: 0px !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Community */
+
+.CommunityWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #030303;
+  padding-top: 10vh;
+  overflow: hidden;
+  box-shadow: #030303 0px -30px 100px 80px;
+  position: relative;
+}
+
+.dappCommunityWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #030303;
+  padding-top: 10vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.circlesWrapper {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40vh;
+  position: relative;
+}
+
+.circle1 {
+  border: solid 4px #0a6f37;
+  border-radius: 50%;
+  height: 180vh;
+  width: 180vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pulse 6s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+.circle2 {
+  position: absolute;
+  border: solid 4px #fec247;
+  border-radius: 50%;
+  height: 170vh;
+  width: 170vh;
+  /*
+    Put top edge and left edge in the center
+   */
+  top: 50%;
+  left: 50%;
+  margin: -85vh 0px 0px -85vh;
+  animation: pulse 6s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.circle3 {
+  position: absolute;
+  border: solid 4px #0a6f37;
+  border-radius: 50%;
+  height: 160vh;
+  width: 160vh;
+  /*
+    Put top edge and left edge in the center
+   */
+  top: 50%;
+  left: 50%;
+  margin: -80vh 0px 0px -80vh;
+  animation: pulse 6s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.circle4 {
+  position: absolute;
+  border: solid 4px #fec247;
+  border-radius: 50%;
+  height: 150vh;
+  width: 150vh;
+  /*
+    Put top edge and left edge in the center
+   */
+  top: 50%;
+  left: 50%;
+  margin: -75vh 0px 0px -75vh;
+  animation: pulse 6s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+.communityTextWrapper {
+  width: 60vw;
+  height: 50vh;
+  max-height: 80vh;
+  margin-top: -120vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 9999;
+}
+
+.communityHR {
+  width: 20%;
+  height: 5px;
+  background: linear-gradient(90deg, #0a6f37 -1.03%, #fec247 95.01%);
+  border: solid 0px #fff;
+}
+
+.communityTitle {
+  font-family: "Chaloops";
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+}
+
+.communityGradientText {
+  background: linear-gradient(90deg, #0a6f37 -1.03%, #fec247 95.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.communitySubtitle {
+  font-family: "CircularMedium";
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.communityIconsWrapper {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.communityIconWrapper {
+  background-color: #0a6f37;
+  padding: 1.5vh;
+  border-radius: 50%;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.communityIcon {
+  width: 4vh;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Pulsing animation for community :*/
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0) scale(1.1);
+  }
+
+  45% {
+    transform: translate3d(-50%, -50%, 0) scale(1.1);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+  }
+}
+
+/* second design hero section: */
+
+.headerLogo{
+  margin-right: 40%;
+}
+
+.navBox{
+  margin-right: 3%;
+}
+
+.connectWalletBtn {
+  background-color: #020202 !important;
+  font-family: "Chaloops";
+  color: #fff;
+  height: 6vh;
+  width: fit-content;
+  border-radius: 15px;
+  margin-left: 3%;
+  border: solid 1px #fff !important;
+}
+
+.newCreateCardsBox{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.newCreateCardBox{
+  background-color: #fff;
+  height: 45vh;
+  width: 17vw;
+  border-radius: 15px;
+  padding: 2% 2% 0% 2%;
+  box-shadow: 0px 0px 20px 5px #00912b;
+}
+
+.newCreateCardBox:nth-child(1){
+  transform: rotate(-10deg);
+}
+
+.newCreateCardBox:nth-child(2){
+  margin-left: -20%;
+  transform: rotate(5deg);
+}
+
+.newCreateCardBoxImage{
+  height: 85%;
+  border-radius: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgBx1{
+  background-color: #003811;
+  background-image: url("../src/assets/images/landing/CrazyZoo_Gorilla_2222.avif");
+}
+
+.imgBx2{
+  background-color: #ffff47;
+  background-image: url("../src/assets/images/landing/CrazyZoo_Lemur_2224.avif");
+}
+
+
+.newCreateTextBox{
+  width: 50%;
+  height: fit-content;
+  
+}
+
+.newCreateTextBox h5{
+  color: #fff;
+  font-family: "CircularMedium";
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.polygonBtn {
+  background-color: #020202;
+  font-family: "Chaloops";
+  color: #fff;
+  height: 6vh;
+  width: fit-content;
+  border-radius: 15px;
+  border: solid 1px #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.connectWalletBtn:hover {
+  color: #fff;
+  background-color: #309133 !important;
+  border-color: #020202 !important;
+}
+
+.connectWalletBtn:active {
+  background-color: #ffff47 !important;
+  font-family: "Chaloops";
+  color: #309133;
+  height: 7vh !important;
+  margin-top: 3% !important;
+  border-radius: 15px;
+  border-color: transparent !important;
+}
+
+.connectWalletBtn:focus {
+  background-color: #ffff47 !important;
+  font-family: "Chaloops";
+  color: #309133;
+  height: 7vh !important;
+  margin-top: 3% !important;
+  border-radius: 15px;
+  border-color: transparent !important;
+}
+
+
+
+.polygonBtn:hover {
+  color: #fff;
+  border-color: #020202;
+  background-color: #309133;
+}
+
+.polygonBtn:active {
+  background-color: #ffff47 !important;
+  font-family: "Chaloops";
+  color: #309133;
+  height: 7vh !important;
+  margin-top: 3% !important;
+  border-radius: 15px;
+  border-color: transparent !important;
+}
+
+.polygonBtn:focus {
+  background-color: #ffff47 !important;
+  font-family: "Chaloops";
+  color: #309133;
+  height: 7vh !important;
+  margin-top: 3% !important;
+  border-radius: 15px;
+  border-color: transparent !important;
+}
+
+.polygonLink {
+  width: fit-content !important;
+  height: fit-content !important;
+  padding: 0px !important;
+}
+
+.heroSection {
+  height: 110vh !important;
+  width: 100vw !important;
+  background: url("../src/assets/images/landing/bg.avif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0px !important;
+  position: relative;
+  margin-top: -10vh !important;
+  padding-top: 27vh;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 5% !important;
+}
+
+.heroTextWrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.heroTextWrapper span:nth-child(1) {
+  color: #ffffff;
+  font-family: "Chaloops";
+  font-size: 5vw;
+  line-height: 100%;
+  text-align: center;
+  text-shadow: 2px 0 #003811, 0 3px #003811, 2px 0 #003811, 0 4px #003811;
+}
+
+.heroCursor {
+  color: #ffffff;
+  font-family: "Chaloops";
+  font-size: 3vw;
+  line-height: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.line1Wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroText {
+  color: #ffffff;
+  font-family: "Chaloops";
+  font-size: 5vw;
+}
+
+.leavesPill1 {
+  width: 12vw;
+  height: 50px;
+  background-image: url("../src/assets/images/landing/palm1.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.line2Wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
+}
+
+.bananaPill1 {
+  width: 14vw;
+  height: 50px;
+  background-image: url("../src/assets/images/landing/banana.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.heroSubtitle {
+  font-family: "Chaloops";
+  font-size: 2.5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  --color-one: #00912b;
+  --color-two: #5bcf5b;
+  --color-three: #79ffa1;
+  --bg-size: 400%;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+
+.heroAvatarsWrapper {
+  width: 50%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.heroAvatarsWrapper img {
+  height: auto;
+  width: 40%;
+}
+
+.heroAvatar:nth-child(1) {
+  z-index: 90;
+  position: relative;
+}
+
+.heroAvatar:nth-child(2) {
+  z-index: 95;
+  margin-left: -10%;
+  position: relative;
+}
+
+.heroAvatar:nth-child(3) {
+  z-index: 100;
+  margin-left: -10%;
+  position: relative;
+}
+
+.gradientWrapper {
+  height: fit-content;
+  width: 100%;
+  background: linear-gradient(
+    184.8deg,
+    #030303 4.43%,
+    #003811 94.93%
+  ) !important;
+}
+
+.newsletterWrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: #030303;
+  border-width: 0px !important;
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter {
+  border-width: 0px !important;
+  height: fit-content;
+}
+
+.newsletterSmallText {
+  font-family: "Circular";
+  color: #ffff67;
+  font-size: 0.8em;
+  margin-bottom: 0px !important;
+}
+
+.newsletterTitle {
+  color: #fff;
+  font-family: "Circular";
+  font-size: 1.5em;
+  margin-bottom: 0px !important;
+  margin-top: 0% !important;
+}
+
+.newsletterInput input {
+  background-color: transparent !important;
+  border-color: #fff !important;
+  font-family: "Josephine" !important;
+  color: #fff;
+  margin-top: 8% !important;
+  width: 25vw !important;
+}
+
+#root
+  > div
+  > div.LandingPageFooterWrapper
+  > div.newsletterWrapper
+  > div.newsletter
+  > div
+  > i {
+  color: #fff !important;
+}
+
+#root
+  > div
+  > div.LandingPageFooterWrapper
+  > div.newsletterWrapper
+  > div.newsletter
+  > div
+  > input[type="text"] {
+  color: #fff !important;
+  font-size: 0.9em !important;
+  padding: 4% 2%;
+}
+.newsletterInput i::before {
+  color: #fff !important;
+  font-size: 1.5em !important;
+  top: 70% !important;
+}
+
+.newsletterLeaves {
+  height: 25vh !important;
+  width: 45vw;
+  background-image: url(../src/assets/images/landing/palm2.avif);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  border-radius: 100px;
+  animation: animatedBackground 30s linear infinite;
+}
+
+#marqee > div > div > span:nth-child(1) {
+  font-family: "Chaloops" !important;
+  font-size: 4em !important;
+  line-height: 100% !important;
+  --color-one: #00912b;
+  --color-two: #5bcf5b;
+  --color-three: #79ffa1;
+  --bg-size: 400%;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+.newLeaves1 {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  z-index: 70;
+  transform: rotateX(-1);
+}
+
+.newLeaves2 {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  left: -15%;
+  top: 12%;
+  z-index: 99;
+  transform: rotate(30deg);
+}
+
+#chartdiv
+  > div
+  > svg
+  > g
+  > g:nth-child(2)
+  > g:nth-child(2)
+  > g
+  > g:nth-child(3) {
+  display: none !important;
+}
+
+.blackSeperator {
+  width: 100%;
+  height: 5vh;
+  background-color: transparent;
+  position: relative;
+  box-shadow: #030303 0px -30px 60px 80px;
+}
+
+.sectionSeperator {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  box-shadow: #033011 0px -30px 80px 30px;
+}
+
+.partnersWrapper {
+  width: 100vw;
+  height: fit-content;
+  padding: 3% 0% 8% 0% !important;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #030303;
+  position: relative;
+  box-shadow: #030303 0px 0px 80px 80px;
+  z-index: 9999;
+}
+
+.marqueeImage{
+  width: 7vw; 
+  height: auto;
+}
+
+.child{
+  margin-left: 0.5% !important;
+  margin-right: 0.5% !important;
+}
+
+.partnersTitle {
+  color: #fff;
+  font-family: "Chaloops";
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bubbles {
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.bubble {
+  background-color: white;
+
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: 152px;
+  margin-right: 20px;
+  position: absolute;
+  transition: opacity ease-in-out 1s;
+  width: 152px;
+}
+
+.shadowSep {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  height: 0px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 40px 5px #4d9d64;
+}
+
+.fromCoinBtn {
+  width: 40% !important;
+  float: left;
+  background-color: transparent !important;
+  border-color: #fff !important;
+  color: #fff;
+  padding-top: 2% !important;
+  padding-bottom: 6% !important;
+  padding-left: 2% !important;
+  height: 10px !important;
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  cursor: pointer;
+}
+
+.toCoinBtn {
+  width: 40% !important;
+  float: left;
+  background-color: transparent !important;
+  border-color: #fff !important;
+  color: #fff;
+  padding-top: 2% !important;
+  padding-bottom: 6% !important;
+  padding-left: 2% !important;
+  height: 10px !important;
+  max-height: -moz-fit-content !important;
+  max-height: fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  cursor: pointer;
+}
+
+.swapCoinLogo {
+  width: 15%;
+  height: auto;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+
+.toCoinBtn span {
+  font-family: "CircularMedium";
+}
+
+.fromCoinBtn span {
+  font-family: "CircularMedium";
+}
+
+.modal-dialog {
+  max-width: 40vw !important;
+  margin-top: 15vh !important;
+}
+
+body
+  > div.fade.modal.show
+  > div
+  > div
+  > div.modal-body.swapModal.space-y-20.pd-20
+  > div
+  > div
+  > div
+  > input[type="text"] {
+  border-color: transparent !important;
+  width: 100% !important;
+  font-family: "CircularMedium" !important;
+}
+
+.jZvqdQ {
+  display: none !important;
+}
+
+.coinsList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 40vh !important;
+  overflow: hidden;
+}
+
+.coinsScrollableList {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.coinsScrollableList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.coinsScrollableList::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.coinsScrollableList::-webkit-scrollbar-thumb {
+  background: #646464;
+  cursor: grab;
+}
+
+.coinsScrollableList::-webkit-scrollbar-thumb:hover {
+  background: #292929;
+}
+
+.addPoolBox{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  padding: 0% 0%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.addPoolBox Button{
+  background-color: #fff;
+  color: #020202;
+  font-family: 'CircularMedium';
+  font-size: 1.2em;
+  border-width: 0px !important;
+  border-radius: 20px !important;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.addPoolBox Button:hover{
+  background-color: #fff !important;
+  color: #515151 !important;
+}
+
+.addPoolBox Button svg{
+  margin-right: 2%;
+}
+
+.LiquidityTitleBar{
+  width: 100%;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LiquidityTitleBar h5{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-family: 'CircularMedium';
+}
+
+.LiquidityTitleBar .LiquidityTitle{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.LiquidityTitleBar .LiquidityClear{
+  color: #03240c;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.newPositionDataBox{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 2%;
+}
+
+.setPairBox{
+  width: 50%;
+  padding: 1% 3%;
+}
+
+.setRangeBox{
+  width: 50%;
+  padding: 1% 5%;
+}
+
+.rangeTitle{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.positionChartBox{
+  width: 100%;
+  height: fit-content;
+  padding: 5% 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.positionChartBoxTitle{
+  font-family: 'CircularMedium';
+  color: #bebebe;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.minMaxBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.liquidityMinBox{
+  width: 47% !important;
+  height: fit-content;
+  padding: 2% 0px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.liquidityMaxBox{
+  width: 47% !important;
+  height: fit-content;
+  padding: 2% 0px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3% 1%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maxBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3% 1%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.minBox button{
+  background-color: #fff;
+  border-width: 0px !important;
+  color: #020202;
+  height: fit-content !important;
+  width: fit-content !important;
+  padding: 5% 5% !important;
+  border-radius: 5px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.minBox button:hover{
+  background-color: #fff;
+  border-width: 0px !important;
+  color: #6a6a6a;
+}
+
+.minBox input{
+  background-color: transparent !important;
+  border-width: 0px !important;
+  color: #020202;
+  text-align: center !important;
+}
+
+.maxBox button{
+  background-color: #fff;
+  border-width: 0px !important;
+  color: #020202;
+  height: fit-content !important;
+  width: fit-content !important;
+  padding: 5% 5% !important;
+  border-radius: 5px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.maxBox button:hover{
+  background-color: #fff;
+  border-width: 0px !important;
+  color: #6a6a6a;
+}
+
+.maxBox input{
+  background-color: transparent !important;
+  border-width: 0px !important;
+  color: #020202;
+  text-align: center !important;
+}
+
+.minmaxBoxTitle{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0px !important;
+}
+
+.minmaxBoxCoins{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0px !important;
+}
+
+.fullRangeBtnBox{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+.fullRangeBtn{
+  border: solid 1px #fff;
+  background-color: transparent !important;
+  border-radius: 10px;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  width: 100%;
+  color: #fff;
+  font-family: 'CircularMedium';
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.fullRangeBtn:hover{
+  background-color: #fff !important;
+  border: solid 1px #fff !important;
+  color: #6c6c6c;
+}
+
+.pairButtonsBox{
+  width: 100%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.pairFromBtn{
+  width: 47%;
+  height: fit-content !important;
+  padding-top: 2% !important;
+  padding-bottom: 1% !important;
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  font-family: 'CircularMedium';
+  font-size: 1.2em;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pairFromBtn:hover{
+  background-color: #fff;
+  color: #bebebe;
+  border: solid 1px #fff !important;
+}
+
+.pairFromBtn:focus{
+  background-color: #fff;
+  color: #bebebe;
+  border: solid 1px #c7c7c7 !important;
+}
+
+.pairToBtn{
+  width: 47%;
+  height: fit-content !important;
+  padding-top: 2% !important;
+  padding-bottom: 1% !important;
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  font-family: 'CircularMedium';
+  font-size: 1.2em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.pairToBtn:hover{
+  background-color: #fff;
+  color: #bebebe;
+  border: solid 1px #fff !important;
+}
+
+.pairToBtn:focus{
+  background-color: #fff;
+  color: #bebebe;
+  border: solid 1px #c7c7c7 !important;
+}
+
+.freeTierBox{
+  width: 100%;
+  height: fit-content;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  padding: 2% 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.freeTierTextBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.freeTierText{
+  font-family: 'CircularMedium';
+  font-size: 1.3em;
+  color: #fff;
+  margin-top: 0px !important;
+  margin-bottom: 10% !important;
+}
+
+.freeTierSpan{
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: 'CircularMedium';
+  font-size: 0.9em;
+  color: #020202;
+  font-weight: 500;
+  width: fit-content;
+  height: fit-content;
+  padding: 1% 3%;
+  margin: 0px !important;
+}
+
+.freeTierBox button{
+  background-color: #fff;
+  border: solid 1px #fff;
+  color: #020202;
+  font-family: 'CircularMedium';
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+
+.freeTierBox button:hover{
+  background-color: #fff;
+  border: solid 1px #fff !important;
+  color: #bebebe;
+  font-family: 'CircularMedium';
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+
+.fromAmountBox{
+  margin-top: 2%;
+  width: 100%;
+  height: fit-content;
+  padding: 2% 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px #fff;
+  border-radius: 15px;
+}
+
+.fromAmountInput{
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+}
+
+.fromAmountInput::placeholder{
+  color: #fff !important;
+}
+
+.convertedFromAmount{
+  font-family: 'CircularMedium';
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 5% !important;
+}
+/* pills background animation */
+
+/* pools */
+
+.poolsPageContainer {
+  width: 100vw;
+  height: fit-content;
+  max-height: fit-content;
+  max-width: 100vw;
+  background-color: #0a7b3d;
+  background-image: url("../src/assets/images/minting/Animal_Background.svg");
+  background-position: left 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  position: relative;
+  z-index: 0;
+}
+
+.poolsBoxWrapper {
+  position: relative;
+  left: 50%;
+  top: 0px;
+  transform: translate(-50%, 0%);
+  width: 90vw;
+  height: fit-content;
+  z-index: 99;
+  padding: 2% !important;
+  margin: 3% 0px 1% 0px !important;
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+.search-label {
+  width: 100% !important;
+}
+
+.poolsSearch {
+  width: 70vw !important;
+  margin: 0px !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  border: solid 1px #fff !important;
+  margin-bottom: 2% !important;
+  padding: 0.5% 1% !important;
+  font-family: "Circular";
+  background-color: #fff !important;
+  border-radius: 20px !important;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 5px !important;
+}
+
+table,
+th,
+td {
+  border-width: 0px !important;
+  color: #fff !important;
+}
+
+th {
+  font-family: "Circular" !important;
+  font-size: 1.3em !important;
+}
+
+td {
+  font-family: "Circular" !important;
+  font-size: 1.2em !important;
+}
+
+.crt {
+  color: #fff !important;
+  font-size: 0.55em !important;
+}
+
+#root
+  > div
+  > div.poolsPageContainer
+  > div
+  > div
+  > div.react-bootstrap-table
+  > table
+  > thead
+  > tr
+  > th.expand-cell-header {
+  visibility: hidden !important;
+}
+
+.expandArrow {
+  color: #fff !important;
+  font-size: 0.7em !important;
+  cursor: pointer;
+}
+
+.poolsRow {
+  background: rgba(217, 217, 217, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  border-radius: 25px !important;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+}
+
+.firstColumn {
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.expand-cell {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  padding-right: 5% !important;
+}
+
+.expandLabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.expandLabel span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  font-size: 0.8em !important;
+}
+
+.expandInput {
+  border: solid 1px #d1d1d1 !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  padding: 2% !important;
+  margin-top: 3% !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  font-family: "CircularMedium" !important;
+}
+
+.expandLabelClear {
+  color: #fff !important;
+}
+
+.expandBtn {
+  width: 100%;
+  height: fit-content;
+  padding: 3% 0px;
+  text-align: center;
+  background-color: #00d640;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+.expandContent {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.AdminNFTrange {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  gap: 100px;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animatedBackgroundHero1 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animatedBackgroundHero2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px; /* Updated: Add border-radius to create a rounded slider */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; /* Updated: Add border-radius to create a rounded slider handle */
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.AdminInputsWrapper {
+  /* border: 1px solid black; */
+  width: 90%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.AdminInputFields {
+  width: 100%;
+  height: fit-content;
+  /* padding: 3% 3%; */
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AdminInputFields_mutiple {
+  width: 100%;
+  height: fit-content;
+  /* padding: 3% 3%; */
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}
+
+.AdminInputFields_mutiple_date {
+  width: 45%;
+  height: fit-content;
+  /* padding: 3% 3%; */
+  overflow: hidden;
+  border: 1px solid #b4dc82;
+  filter: drop-shadow(0px 0px 24px #b4dc82);
+  border-radius: 10px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 1%;
+}
+.AdminInputFieldsFont {
+  width: 100%;
+  float: left;
+  color: #fff;
+  font-family: "UbuntuTitling-Bold";
+  font-size: 1em;
+  margin-bottom: 0px !important;
+}
+.AdminCurrentText {
+  width: 100%;
+  margin-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.adminCurrentTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adminCurrentText {
+  width: 100%;
+  margin-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.AdminSetValuesBtn {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adminBtn {
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  border-width: 0px !important;
+  width: 100%;
+  margin-top: 3%;
+  font-family: "Chaloops";
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+  margin-bottom: 5% !important;
+}
+
+.adminBtn:hover {
+  border-width: 0px;
+  background: #b4dc82;
+  box-shadow: 0px 0px 4px #b4dc82;
+  border-radius: 5px;
+  color: #e0e0e0;
+}
+
+.dateFields {
+  /* border : 1px solid black; */
+  display: flex;
+  justify-content: flex-start;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
