@@ -6,21 +6,21 @@ const dappMenus = [
     },
     {
         id: 2,
-        name: 'Mint',
+        name: 'Minnnnnnt',
         links: '/minting'
     },
     {
         id: 3,
-        name: 'Staking',
+        name: 'Stakkkkkking',
         links: '/staking'
     },{
         id: 4,
         name: 'Swap',
-        links: '/swapping'
+        links: '/swappppppping'
     },
     {
         id: 5,
-        name: 'Treasury',
+        name: 'Treasssssury',
         links: '/treasury'
     },
     {
