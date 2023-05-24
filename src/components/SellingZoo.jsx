@@ -1,9 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import 'semantic-ui-css/semantic.min.css';
-import { SetToken, GetToken } from '../hooks/dapp/useToken'
-import { SetUSDT } from '../hooks/dapp/UseUSDT'
-import { SetUniswapIntermediary } from '../hooks/dapp/UseUniswap'
+
 import { useNetwork } from 'wagmi'
 import { useEffect  } from 'react';
 
@@ -13,23 +11,23 @@ const SellingZoo = (
     const { chain, chains } = useNetwork()
     const { OtherTokenAddress, isZoo, approvedAmount, setSwapDone } = data
     
-    const { data : dataSellingZooToken, isLoading : isLoadingSellingZooToken, isSuccess: isSuccessSellingZooToken, write: SellingZooToken } = SetUniswapIntermediary('SellingZooToken',[`${approvedAmount*1e6}`,`${OtherTokenAddress}`], chain.id)
+    // const { data : dataSellingZooToken, isLoading : isLoadingSellingZooToken, isSuccess: isSuccessSellingZooToken, write: SellingZooToken } = SetUniswapIntermediary('SellingZooToken',[`${approvedAmount*1e6}`,`${OtherTokenAddress}`], chain.id)
     
     const handleApprove = async () => {
-        await SellingZooToken?.();
+        // await SellingZooToken?.();
     };
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        if(isSuccessSellingZooToken){
-            setSwapDone(false)
-        }
+    //     if(isSuccessSellingZooToken){
+    //         setSwapDone(false)
+    //     }
 
-    },[isSuccessSellingZooToken])
+    // },[isSuccessSellingZooToken])
     
     return (
         <div className="swappingFormWrapper">
-                <Button className="swapBtn" onClick ={handleApprove}>{"Swap"}</Button>
+                <Button className="swapBtn" >{"Swap"}</Button>
         </div>
     );
 }

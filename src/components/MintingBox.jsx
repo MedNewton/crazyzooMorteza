@@ -10,7 +10,7 @@ import {
 } from 'wagmi'
 import config from '../config'
 import ApproveNFT from './ApproveNFT'
-import { GetNFT } from '../hooks/dapp/UseNFT'
+
 
 
 
@@ -23,14 +23,13 @@ const MintingBox = props => {
     const Array = ["mintLemur", "mintRhino", "mintGorilla"];
     const randomIndex = Math.floor(Math.random() * Array.length);
     
-    const { data: NFTfee, isError : isErrorFeeForId, isLoading: isLoadingFeeForId } = GetNFT('getFeeForIndex',chain?.id,[`${randomIndex}`])
 
     
-    useEffect(()=>{
-        if(chain!= undefined){
-            setNFTContractAddress(config?.ContractsConfig?.[chain?.id]?.ZOONFT ?? '')
-        }
-    },[isConnected])
+    // useEffect(()=>{
+    //     if(chain!= undefined){
+    //         setNFTContractAddress(config?.ContractsConfig?.[chain?.id]?.ZOONFT ?? '')
+    //     }
+    // },[isConnected])
       
 
     const data = props.data;

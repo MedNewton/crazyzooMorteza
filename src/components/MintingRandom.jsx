@@ -5,7 +5,7 @@ import {
     useConnect,
     useNetwork
 } from 'wagmi'
-import { SetNFT, GetNFT } from '../hooks/dapp/UseNFT'
+
 
 
 const MintingRandom = (
@@ -17,16 +17,14 @@ const MintingRandom = (
     const {randomNft} = data
     const { address, isConnected } = useAccount()
     
-    const { data: BalanceOf, isError, isLoading } = GetNFT('balanceOf',chain?.id,[`${address}`])
-    const { data: dataMint, isLoading: isLoadingMint, isSuccess: isSuccessMint, write: mint } = SetNFT(randomNft, [`${address}`], chain?.id)
     
     const handleMint = async () => {
-        await mint?.();
+        // await mint?.();
     };
 
     return (
         <div className="mintBtnWrapper">
-            <Button className="mintBtn" disabled={isLoadingMint} onClick={handleMint} >Mint</Button>:
+            <Button className="mintBtn" >Mint</Button>:
 
         </div>
 

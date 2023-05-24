@@ -4,27 +4,36 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
 
-import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
-import { Web3Modal } from '@web3modal/react'
-import { configureChains, createClient, WagmiConfig } from 'wagmi'
-import { arbitrum, arbitrumGoerli, mainnet, polygon, polygonMumbai } from 'wagmi/chains'
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { NetworkContractsContextProvider } from './context/providers/contractProvider'
-
-const chains = [arbitrumGoerli, arbitrum, mainnet, polygon, polygonMumbai];
-
-const apiKey = "Qg-FtBXZr0sZeieqGOg1HoR1ma6MscWF";
+import {
+  EthereumClient,
+  modalConnectors,
+  walletConnectProvider,
+} from "@web3modal/ethereum";
+import { Web3Modal } from "@web3modal/react";
+import { configureChains, createClient, WagmiConfig } from "wagmi";
+import { arbitrum, mainnet, polygon, goerli, arbitrumGoerli } from "wagmi/chains";
 
 
-const { provider } = configureChains(chains, [alchemyProvider({ apiKey })])
+const chains = [arbitrumGoerli]
+const projectId = '4cf5553433a887b55497ae6ccffc2a9b'
+
+// configure chains
+// const chains = [polygon];
 // Wagmi client
+const { provider } = configureChains(chains, [
+  walletConnectProvider({ projectId: projectId }),
+]);
 
 const wagmiClient = createClient({
   autoConnect: true,
-  connectors: w3mConnectors({ apiKey, version: 1, chains }),
-  provider
-})
-const ethereumClient = new EthereumClient(wagmiClient, chains)
+  connectors: modalConnectors({ appName: "web3Modal", chains }),
+  provider,
+});
+
+// Web3Modal Ethereum Client
+const ethereumClient = new EthereumClient(wagmiClient, chains);
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -35,13 +44,13 @@ root.render(
     </WagmiConfig>
 
     <Web3Modal
-      projectId="Qg-FtBXZr0sZeieqGOg1HoR1ma6MscWF"
-      ethereumClient={ethereumClient}
-      themeMode="light"
-
-      themeColor="green"
-      themeBackground='themeColor'
-    />
+          // projectId={process.env.NEXT_PUBLIC_PROJECT_ID}
+          projectId={projectId}
+          ethereumClient={ethereumClient}
+          themeColor="green"
+          themeMode="dark"
+          themeBackground="gradient"
+        />
 
   </BrowserRouter>
 );

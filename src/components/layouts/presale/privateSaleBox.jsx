@@ -3,11 +3,8 @@ import PropTypes from "prop-types";
 import Countdown from "react-countdown";
 import { Button } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import ApprovePreSale from '../../ApprovePreSale';
 import { useEffect, useState } from 'react';
-import BuyingPreSale from '../../BuyingPreSale';
-import { SetUSDT } from '../../../hooks/dapp/UseUSDT'
-import { ethers } from 'ethers';
+
 import {
     useAccount,
     useConnect,
@@ -100,6 +97,8 @@ const PrivateSaleBox = (props) => {
 }
 
 const buyFunc = async () => {
+    console.log("buy function1", buyZooToken)
+    console.log("allowanc", Number(allowance.data))
     if(usdcBalance.data/10**decimals.data < Number(inputAmount)){
         toast.error("You don't have enough funds to buy");
         return;
@@ -112,6 +111,7 @@ const buyFunc = async () => {
         toast.error(`Lower than minimum investment amount (${minimumInvestment.data/10**decimals.data})`);
         return;
     }
+    console.log("buy function1", buyZooToken)
     buyZooToken.write?.();
 }
 
@@ -145,9 +145,10 @@ useEffect(() => {
     }
     if(approveWait.isSuccess){
         allowance.refetch();
+        usdcBalance.refetch();
         toast.dismiss();
         toast.success("Approved Successfully!");
-        approve.reset();
+        buyZooToken.reset();
     }
     if(approveWait.isError){
         toast.dismiss();

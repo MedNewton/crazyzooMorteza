@@ -1,9 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import 'semantic-ui-css/semantic.min.css';
-import { SetToken, GetToken } from '../hooks/dapp/useToken'
-import { SetUSDT, GetUSDT } from '../hooks/dapp/UseUSDT'
-import { SetUniswapIntermediary } from '../hooks/dapp/UseUniswap'
+
 import { useNetwork } from 'wagmi'
 import SellingZoo from '../components/SellingZoo'
 import BuyingZoo from '../components/BuyingZoo'
@@ -28,33 +26,33 @@ const Approve = (
     const amountString = Number(approvedAmount).toFixed();
 
     // // Multiply the amount by 10^6 (since your token has 6 decimals)
-    const ZootokenAmount = ethers.BigNumber.from(amountString).mul(ethers.BigNumber.from(10).pow(6));
-    const OthertokenAmount = ethers.BigNumber.from(amountString).mul(ethers.BigNumber.from(10).pow(18));
+    // const ZootokenAmount = ethers.BigNumber.from(amountString).mul(ethers.BigNumber.from(10).pow(6));
+    // const OthertokenAmount = ethers.BigNumber.from(amountString).mul(ethers.BigNumber.from(10).pow(18));
 
-    const { data: dataZooApprove, isLoading: isLoadingZooApprove, isSuccess: isSuccessZooApprove, write: ZooApprove } = SetToken('approve', [`${swapContractAddress}`, `${ZootokenAmount}`], chain.id)
-    const { data: dataTokenApprove, isLoading: isLoadingTokenApprove, isSuccess: isSuccessTokenApprove, write: TokenApprove } = SetUSDT('approve', [`${swapContractAddress}`, `${OthertokenAmount}`], chain.id)
+    // const { data: dataZooApprove, isLoading: isLoadingZooApprove, isSuccess: isSuccessZooApprove, write: ZooApprove } = SetToken('approve', [`${swapContractAddress}`, `${ZootokenAmount}`], chain.id)
+    // const { data: dataTokenApprove, isLoading: isLoadingTokenApprove, isSuccess: isSuccessTokenApprove, write: TokenApprove } = SetUSDT('approve', [`${swapContractAddress}`, `${OthertokenAmount}`], chain.id)
 
 
     const handleApprove = async () => {
 
         if (isZoo) {
-            await ZooApprove?.();
+            // await ZooApprove?.();
         } else {
-            await TokenApprove?.();
+            // await TokenApprove?.();
         }
     };
 
-    useEffect(() => {
-        if (isSuccessTokenApprove || isSuccessZooApprove) {
-            setSwapDone(false)
-        }
-    }, [isSuccessTokenApprove, isSuccessZooApprove])
+    // useEffect(() => {
+    //     if (isSuccessTokenApprove || isSuccessZooApprove) {
+    //         setSwapDone(false)
+    //     }
+    // }, [isSuccessTokenApprove, isSuccessZooApprove])
 
     return (
         <div className="swappingFormWrapper">
             {
                 swapDone ?
-                    <Button className="swapBtn" onClick={handleApprove}>{"Approve"}</Button>
+                    <Button className="swapBtn">{"Approve"}</Button>
                     :
                     isZoo ?
                         <SellingZoo
