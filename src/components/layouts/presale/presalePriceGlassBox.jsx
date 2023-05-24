@@ -64,16 +64,25 @@ const PresalePriceGlassBox = (props) => {
         <div className="col-6 presaleMin">
           <div className="presaleTokenPrice">
             <h5 className="presaleTokenPriceLabel">Minimum Buy</h5>
-            <h5 className="presaleTokenPriceData">
-            {(Number(minimumInvestment.data)/10**Number(decimals.data))} $USDT
+            <h5 className="presaleTokenPriceData" style={{whiteSpace: "nowrap"}}>
+            {(Number(minimumInvestment.data)/10**Number(decimals.data))} $USDC<img
+            src="https://assets.coincap.io/assets/icons/usdc@2x.png"
+            style={{ height: "1.2em", width: "auto", marginLeft: "2%" }}
+            alt=""
+          ></img>
             </h5>
           </div>
         </div>
         <div className="col-6 presaleMax">
           <div className="presaleTokenPrice">
             <h5 className="presaleTokenPriceLabel">Maximum Buy</h5>
-            <h5 className="presaleTokenPriceData">
-            {Number(maximumInvestment.data)/10**Number(decimals.data)} $USDT
+            <h5 className="presaleTokenPriceData" style={{whiteSpace: "nowrap"}}>
+            {Number(maximumInvestment.data)/10**Number(decimals.data)} $usdc
+            <img
+            src="https://assets.coincap.io/assets/icons/usdc@2x.png"
+            style={{ height: "1.2em", width: "auto", marginLeft: "2%" }}
+            alt=""
+          ></img>
             </h5>
           </div>
         </div>

@@ -30,12 +30,12 @@ const PresaleLayout = props => {
     const privateSaleData = [
         {
             countdownTo: 650000000,
-            privateSaleFrom: 250,
-            privateSaleTo: 1250,
+            privateSaleFrom: 10,
+            privateSaleTo: 30000,
             tokenPriceMatic: 100,
             tokenPriceUSDT: 1000000,
             minBuy: 10,
-            maxBuy: 30
+            maxBuy: 30000
         }
     ]
 

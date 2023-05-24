@@ -10,7 +10,7 @@ const PresaleWelcomeGlassBox = props => {
 
     return (
         <div className='presaleWelcomeGlassBox'>
-            <div className="presaleWelcomeBoxTitleWrapper">Welcome to Crazy Woo</div>
+            <div className="presaleWelcomeBoxTitleWrapper">Welcome to Crazy Zoo</div>
             <p>Crazy Zoo is a Play to Earn Social Impact Ecosystem that offers a user-friendly platform that connects a variety of blockchain and cryptocurrency-related industries.</p>
             <p className='outlinedParagraph'>With innovation at the foundation of all we do, we constantly strive to stay one step ahead of the competition in this constantly evolving industry, while also making sure we adhere to our basic values of sustainability and equality.</p>
         </div>

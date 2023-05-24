@@ -33,7 +33,8 @@
 /* Reset Browsers
 -------------------------------------------------------------- */
 html{
-    overflow: hidden !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
     
 }
 
