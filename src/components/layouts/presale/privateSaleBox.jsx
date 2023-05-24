@@ -148,6 +148,7 @@ useEffect(() => {
         usdcBalance.refetch();
         toast.dismiss();
         toast.success("Approved Successfully!");
+        approve.reset();
         buyZooToken.reset();
     }
     if(approveWait.isError){
