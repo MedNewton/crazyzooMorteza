@@ -20,7 +20,7 @@ export function ApproveToken(tokenAddress, spender, amount) {
       abi: usdcTokenAbi,
       functionName: "approve",
       args: [spender, convertedAmount],
-      enabled: Boolean(tokenAddress && spender && amount),
+      enabled: Boolean(amount),
       overrides:{
         gasLimit: 500000
       }

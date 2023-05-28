@@ -27,7 +27,7 @@ const PresaleReferralLinkBox = props => {
 
 	useEffect(() => {
 		getInviteLink();
-	}, [isConnected]);
+	}, [isConnected, address]);
 
 
     const copyTextToClipboard = async (text) => {

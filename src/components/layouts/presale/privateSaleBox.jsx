@@ -53,7 +53,7 @@ const PrivateSaleBox = (props) => {
   //const countdownTo = data[0].countdownTo;
 
   const addressZero = '0x0000000000000000000000000000000000000000';
-  const [inputAmount, setInputAmount] = useState()
+  const [inputAmount, setInputAmount] = useState(0)
   const [referAddress, setReferAddress] = useState(addressZero);
 
   const {address, isConnected} = useAccount()
@@ -80,7 +80,7 @@ const PrivateSaleBox = (props) => {
 
 
   const approveFunc = async () => {
-        
+    console.log('write', approve)
     if(Number(usdcBalance.data)/10**decimals.data < Number(inputAmount)){
         toast.error("You don't have enough funds to buy");
         return;
@@ -97,7 +97,7 @@ const PrivateSaleBox = (props) => {
 }
 
 const buyFunc = async () => {
-    console.log("buy function1", buyZooToken)
+    // console.log("buy function1", buyZooToken)
     console.log("allowanc", Number(allowance.data))
     if(usdcBalance.data/10**decimals.data < Number(inputAmount)){
         toast.error("You don't have enough funds to buy");
@@ -149,7 +149,7 @@ useEffect(() => {
         toast.dismiss();
         toast.success("Approved Successfully!");
         approve.reset();
-        buyZooToken.reset();
+        // buyZooToken.reset();
     }
     if(approveWait.isError){
         toast.dismiss();
