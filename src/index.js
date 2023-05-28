@@ -14,7 +14,7 @@ import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { arbitrum, mainnet, polygon, goerli, arbitrumGoerli } from "wagmi/chains";
 
 
-const chains = [arbitrumGoerli]
+const chains = [arbitrumGoerli, polygon]
 const projectId = '4cf5553433a887b55497ae6ccffc2a9b'
 
 // configure chains
