@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import { GetMinimumInvestment } from '../../../hooks/main/getMinimumInvestment';
 import { GetMaximumInvestment } from '../../../hooks/main/getMaximumInvestment';
 import { GetTokenDecimals } from '../../../hooks/main/getTokenDecimals';
-import { usdcTokenAddress } from '../../../hooks/main/abi';
+import { UsdcTokenAddress } from '../../../hooks/main/abi';
 
 const PresalePriceGlassBox = (props) => {
   const data = props.data;
 
-  const decimals = GetTokenDecimals(usdcTokenAddress);
+  const decimals = GetTokenDecimals(UsdcTokenAddress());
   const minimumInvestment = GetMinimumInvestment();
   const maximumInvestment = GetMaximumInvestment();
   return (

@@ -1,10 +1,55 @@
-// export const zooTokenAddress = "0x3F96DA7Ab90610160Cfd973BA9F4e68a890C354C" //mumbai
-// export const preSaleContractAddress = "0x19A2fC2505098AF4560ABDeF6757CE9eBce157BF" //mumbai
-// export const usdcTokenAddress = "0xb17943D0340100b08e81de93577929C80C6E46e7" //mumbai
 
-export const zooTokenAddress = "0xd1d2C63e8f84410e8eB9cA3Fcd5d81064Cc7AeA7" //arbitrumGoerli
-export const preSaleContractAddress = "0xD474BA29Ef9AA01Fa897C0A65B23872D8Cd8C146" //arbitrumGoerli
-export const usdcTokenAddress = "0x4fCf905643E6be093Eba72Dd0f6d4a1d3Fb86c7D" //arbitrumGoerli
+// import { arbitrumGoerli, polygonMumbai } from "viem/chains"
+import { arbitrumGoerli, polygonMumbai, arbitrum} from "wagmi/chains"
+
+import { useNetwork } from "wagmi"
+
+const mumbaiZooTokenAddress = "0x3F96DA7Ab90610160Cfd973BA9F4e68a890C354C" //mumbai
+const mumbaiPreSaleContractAddress = "0x19A2fC2505098AF4560ABDeF6757CE9eBce157BF" //mumbai
+const mumbaiUsdcTokenAddress = "0xb17943D0340100b08e81de93577929C80C6E46e7" //mumbai
+
+
+const arbitrumGoerliZooTokenAddress = "0xd1d2C63e8f84410e8eB9cA3Fcd5d81064Cc7AeA7" //arbitrumGoerli
+const arbitrumGoerliPreSaleContractAddress = "0xD474BA29Ef9AA01Fa897C0A65B23872D8Cd8C146" //arbitrumGoerli
+const arbitrumGoerliUsdcTokenAddress = "0x4fCf905643E6be093Eba72Dd0f6d4a1d3Fb86c7D" //arbitrumGoerli
+
+const arbitrumMainnetZooTokenAddress = "0x98A9da098bbbfB086070d00De31176a50588298e" //arbitrumGoerli
+const arbitrumMainnetPreSaleContractAddress = "0x719Fc5B98cD13CB17327C30fD5075dB076E5756c" //arbitrumGoerli
+const arbitrumMainnetUsdcTokenAddress = "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8" //arbitrumGoerli
+
+export const ZooTokenAddress = () => {
+  const { chain} = useNetwork()
+  // console.log("is chain goerli", chain.id === arbitrumGoerli.id)
+  // return arbitrumGoerliZooTokenAddress
+  if(chain?.id === arbitrumGoerli?.id){
+    return arbitrumGoerliZooTokenAddress
+  } else if (chain?.id === arbitrum?.id){
+    return arbitrumMainnetZooTokenAddress
+  }
+}
+
+
+export const PreSaleContractAddress = () => {
+  const { chain} = useNetwork()
+  // return arbitrumGoerliPreSaleContractAddress
+  if(chain?.id === arbitrumGoerli?.id){
+    return arbitrumGoerliPreSaleContractAddress
+  } else if (chain?.id === arbitrum?.id){
+    return arbitrumMainnetPreSaleContractAddress
+  }
+}
+
+export const UsdcTokenAddress = () => {
+  const { chain} = useNetwork()
+  // return arbitrumGoerliUsdcTokenAddress
+  if(chain?.id === arbitrumGoerli?.id){
+    return arbitrumGoerliUsdcTokenAddress
+  } else if (chain?.id === arbitrum?.id){
+    return arbitrumMainnetUsdcTokenAddress
+  }
+}
+
+
 
 export const zooTokenAbi = [
     {

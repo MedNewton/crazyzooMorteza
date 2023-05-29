@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import { useContractRead, useContractWrite, usePrepareContractWrite } from 'wagmi'
-import { usdcTokenAbi, usdcTokenAddress } from './abi';
+import { UsdcTokenAddress, usdcTokenAbi } from './abi';
 
 
 
@@ -9,7 +9,7 @@ export function GetUserUsdcBalance(ownerAddress) {
   
 
   const allowanceAmount = useContractRead({
-    address: usdcTokenAddress,
+    address: UsdcTokenAddress(),
     abi: usdcTokenAbi,
     functionName: 'balanceOf',
     args: [ownerAddress],

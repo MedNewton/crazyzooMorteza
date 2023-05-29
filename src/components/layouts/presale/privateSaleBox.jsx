@@ -13,8 +13,8 @@ import {
 } from "wagmi";
 import { ApproveToken } from "../../../hooks/main/approveToke";
 import {
-  preSaleContractAddress,
-  usdcTokenAddress,
+  PreSaleContractAddress,
+  UsdcTokenAddress,
 } from "../../../hooks/main/abi";
 import { toast } from "react-toastify";
 import { GetAllowanceAmount } from "../../../hooks/main/getAllowanceAmount";
@@ -60,8 +60,8 @@ const PrivateSaleBox = (props) => {
   const { address, isConnected } = useAccount();
   const { chain, chains } = useNetwork();
 
-  const allowance = GetAllowanceAmount(address, preSaleContractAddress);
-  const decimals = GetTokenDecimals(usdcTokenAddress);
+  const allowance = GetAllowanceAmount(address, PreSaleContractAddress());
+  const decimals = GetTokenDecimals(UsdcTokenAddress());
   const usdcBalance = GetUserUsdcBalance(address);
   const currentRefer = GetUserRefer(address);
   const minimumInvestment = GetMinimumInvestment();
@@ -72,8 +72,8 @@ const PrivateSaleBox = (props) => {
   let approveAmount =
     convertedAllowance < Number(inputAmount) ? Number(inputAmount) : 0;
   const approve = ApproveToken(
-    usdcTokenAddress,
-    preSaleContractAddress,
+    UsdcTokenAddress(),
+    PreSaleContractAddress(),
     approveAmount
   );
   const approveWait = useWaitForTransaction({ hash: approve?.data?.hash });

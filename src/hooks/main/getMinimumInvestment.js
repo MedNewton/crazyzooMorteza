@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import { useContractRead, useContractWrite, usePrepareContractWrite } from 'wagmi'
-import { preSaleAbi, preSaleContractAddress, usdcTokenAbi } from './abi';
+import { PreSaleContractAddress, preSaleAbi, usdcTokenAbi } from './abi';
 
 
 
@@ -9,7 +9,7 @@ export function GetMinimumInvestment() {
   
 
   const minimum = useContractRead({
-    address: preSaleContractAddress,
+    address: PreSaleContractAddress(),
     abi: preSaleAbi,
     functionName: 'minInvestment',
     args: [],

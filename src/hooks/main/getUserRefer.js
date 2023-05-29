@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import { useContractRead, useContractWrite, usePrepareContractWrite } from 'wagmi'
-import { preSaleAbi, preSaleContractAddress, purchaseAbi, purchaseContractAddress, tokenAbi, usdcTokenAddress, zooTokenAbi, zooTokenAddress } from './abi';
+import { ZooTokenAddress, preSaleAbi, purchaseAbi, tokenAbi, zooTokenAbi } from './abi';
 
 
 //get collateral balance of the user address in the exchange contract
@@ -8,7 +8,7 @@ export function GetUserRefer(userAddress) {
   
 
   const refer = useContractRead({
-    address: zooTokenAddress,
+    address: ZooTokenAddress(),
     abi: zooTokenAbi,
     functionName: 'referrer',
     args: [userAddress],
