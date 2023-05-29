@@ -21,9 +21,9 @@ export function ApproveToken(tokenAddress, spender, amount) {
       functionName: "approve",
       args: [spender, convertedAmount],
       enabled: Boolean(amount),
-      overrides:{
-        gasLimit: 500000
-      }
+      // overrides:{
+      //   gasLimit: 500000
+      // }
     });
     // console.log("approve inputs :", spender, convertedAmount);
     const { data, isLoading, isSuccess, write, status, reset } =

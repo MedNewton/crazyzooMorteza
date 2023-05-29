@@ -21,9 +21,9 @@ export function BuyZooToken(user, refer, amount) {
       functionName: "buyZooTokens",
       args: [user, refer, convertedAmount],
       enabled: Boolean(user),
-      overrides:{
-        gasLimit: 1000000
-      }
+      // overrides:{
+      //   gasLimit: 1000000
+      // }
     });
     // console.log("approve inputs :", spender, convertedAmount);
     const { data, isLoading, isSuccess, write, status, reset } =
