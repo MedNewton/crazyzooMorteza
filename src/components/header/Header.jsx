@@ -10,20 +10,27 @@ import { Web3Button } from "@web3modal/react";
 import { useWeb3Modal } from "@web3modal/react";
 import { useAccount } from "wagmi";
 
+import { Menu, SubMenu, Item } from "burger-menu";
+import "burger-menu/lib/index.css";
+
 const Header = () => {
   const { isOpen, open, close, setDefaultChain } = useWeb3Modal();
 
   const [menuItems, setMenuItems] = useState(menus);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const nav = useNavigate();
 
-  const { address, isConnecting, isDisconnected } = useAccount()
+  const { address, isConnecting, isDisconnected } = useAccount();
 
-  function addressAbv(a){
-    let result = a.toString().substring(0,5).toString() + "..." + a.toString().substring(a.toString().length - 6)
+  function addressAbv(a) {
+    let result =
+      a.toString().substring(0, 5).toString() +
+      "..." +
+      a.toString().substring(a.toString().length - 6);
     return result.toString();
   }
-
 
   /*useEffect(() => {
         if (adr && (adr != null)) {
@@ -85,7 +92,7 @@ const Header = () => {
                   </div>
                   <div className="navBox">
                     <nav id="main-nav" className="main-nav" ref={menuLeft}>
-                      <ul id="menu-primary-menu" className="menu">
+                      <ul id="menu-primary-menu" className="menu" style={{backgroundColor: "transparent"}}>
                         {menuItems.map((data, index) => (
                           <li
                             key={index}
@@ -122,11 +129,15 @@ const Header = () => {
                     <Button
                       className="polygonBtn"
                       onClick={() => {
-                        window.open("https://polygonscan.com/", "_blank");
+                        window.open("https://arbiscan.io/", "_blank");
                       }}
                     >
-                        <img style={{height: "3vh", marginRight: "5%"}} src="https://ipfs.thirdwebcdn.com/ipfs/QmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9/arbitrum/512.png" alt="" />
-                     Arbitrum
+                      <img
+                        style={{ height: "3vh", marginRight: "5%" }}
+                        src="https://ipfs.thirdwebcdn.com/ipfs/QmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9/arbitrum/512.png"
+                        alt=""
+                      />
+                      Arbitrum
                     </Button>
                     <Button
                       className="connectWalletBtn"
@@ -134,11 +145,48 @@ const Header = () => {
                         await open();
                       }}
                     >
-                      {
-                        address != null && address != "" && address != " " ? (addressAbv(address.toString())) : ("Connect Wallet")
-                      }
+                      {address != null && address != "" && address != " "
+                        ? addressAbv(address.toString())
+                        : "Connect Wallet"}
                     </Button>
                   </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    height={30}
+                    width={30}
+                    className="mobileMenuBtn"
+                    viewBox="0 0 32 32"
+                    id="list"
+                    onClick={() => setIsMenuOpen(!isOpen)}
+                  >
+                    <defs></defs>
+                    <path
+                      fill="#fff"
+                      d="M3 9h26a2 2 0 0 0 0-4H3a2 2 0 0 0 0 4ZM29 14H3a2 2 0 0 0 0 4h26a2 2 0 0 0 0-4ZM29 23H3a2 2 0 0 0 0 4h26a2 2 0 0 0 0-4Z"
+                    ></path>
+                  </svg>
+                  <Menu
+                    className="burger-menu"
+                    isOpen={isMenuOpen}
+                    selectedKey={"entry"}
+                    onClose={() => setIsMenuOpen(false)}
+                  >
+                    <Link to={"/roadmap"}>
+                      <Item
+                        itemKey={"why"}
+                        text={"Roadmap"}
+                        onClick={() => setIsMenuOpen(!isOpen)}
+                      ></Item>
+                    </Link>
+                    <Link to={"/presale"}>
+                      <Item
+                        itemKey={"why"}
+                        text={"Presale"}
+                        onClick={() => setIsMenuOpen(!isOpen)}
+                      ></Item>
+                    </Link>
+                  </Menu>
                 </div>
               </div>
             </div>

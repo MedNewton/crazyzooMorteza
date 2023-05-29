@@ -63,7 +63,7 @@ body {
   height: fit-content;
   margin-left: 0px !important;
   margin-right: 0px !important;
-  background-color: rgba(0,0,0, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -76,7 +76,7 @@ body {
   z-index: 99999;
 }
 
-.introSubtitle{
+.introSubtitle {
   font-family: "CircularMedium";
   font-size: 2em;
   color: #86ffa1;
@@ -84,7 +84,14 @@ body {
   margin-right: auto;
   text-align: center;
   margin-bottom: 5%;
-  background: linear-gradient( 120deg, var(--color-one), var(--color-two), var(--color-three), var(--color-one) ) 0 0 / var(--bg-size) 100%;
+  background: linear-gradient(
+      120deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
   animation: move-bg 15s infinite linear;
 }
 
@@ -111,7 +118,7 @@ body {
 .main-nav {
   position: relative !important;
   width: fit-content;
-  background-color: rgba(2,2,2, 0);
+  background-color: rgba(2, 2, 2, 0);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -144,13 +151,12 @@ body {
   color: #093011;
 }
 
-.ctaWrapper{
+.ctaWrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
-
 
 .ctaWrapper span {
   border-color: transparent !important;
@@ -927,7 +933,7 @@ w3m-text {
   float: right;
   color: #fff;
   font-family: "Chaloops";
-  font-size: 1.2em;
+  font-size: 0.8em;
   background: #b4dc82;
   box-shadow: 0px 0px 4px #b4dc82;
   border-radius: 5px;
@@ -1438,7 +1444,6 @@ input[type="number"] {
   border-width: 0px;
   line-height: 0.6em;
   margin: auto !important;
-  font-size: 1.2em;
 }
 
 .referralRewardsWithdrawBtn:hover {
@@ -2109,7 +2114,7 @@ input[type="number"] {
   padding: 1% 5% 1% 5%;
   font-family: "Chaloops";
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: -7%;
   margin-left: 5%;
   z-index: 99;
@@ -2118,14 +2123,14 @@ input[type="number"] {
 .presaleWelcomeGlassBox p {
   color: #fff;
   font-family: "UbuntuTitling-Bold";
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 5% 5% 0px 5%;
 }
 
 .presaleWelcomeGlassBox .outlinedParagraph {
   color: #fff;
   font-family: "UbuntuTitling-Bold";
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 3%;
   border: 1px solid #b4dc82;
   border-radius: 15px;
@@ -2153,7 +2158,7 @@ input[type="number"] {
 .presaleAddressLabel {
   color: #313131;
   font-family: "UbuntuTitling-Bold";
-  font-size: 1.3em;
+  font-size: 0.8em;
   float: left;
   margin-bottom: 0px !important;
 }
@@ -2161,7 +2166,7 @@ input[type="number"] {
 .presaleWhitepaperLabel {
   color: #fff;
   font-family: "Chaloops";
-  font-size: 1.2em;
+  font-size: 0.8em;
   float: left;
   margin-bottom: 0px !important;
 }
@@ -2177,7 +2182,7 @@ input[type="number"] {
   color: #fff;
   border-width: 0px;
   line-height: 0.6em;
-  font-size: 1.2em;
+  font-size: 0.7em;
 }
 
 .presaleWhitepaperWrapper {
@@ -2253,7 +2258,7 @@ input[type="number"] {
   padding: 1% 5% 1% 5%;
   font-family: "Chaloops";
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: -7%;
   margin-left: auto;
   margin-right: auto;
@@ -2281,7 +2286,7 @@ input[type="number"] {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   font-family: "Chaloops";
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: #fff;
   background: #b4dc82;
   box-shadow: 0px 0px 24px #b4dc82;
@@ -2310,7 +2315,7 @@ input[type="number"] {
   float: left;
   color: #fff;
   font-family: "Chaloops";
-  font-size: 1.3em;
+  font-size: 0.8em;
   margin-bottom: 0px !important;
   margin-top: 0px !important;
   display: flex;
@@ -2324,7 +2329,7 @@ input[type="number"] {
   float: right;
   color: #fff;
   font-family: "Chaloops";
-  font-size: 1.3em;
+  font-size: 0.8em;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   display: flex;
@@ -2434,7 +2439,7 @@ input[type="number"] {
 
 .presaleTokenPriceLabel {
   font-family: "UbuntuTitling-Bold";
-  font-size: 1.5em;
+  font-size: 1em;
   color: #fff;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -2442,11 +2447,11 @@ input[type="number"] {
 
 .presaleTokenPriceData {
   font-family: "UbuntuTitling-Bold";
-  font-size: 1.3em;
+  font-size: 1em;
   color: #fff;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  width: fit-content!important;
+  width: fit-content !important;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2454,10 +2459,9 @@ input[type="number"] {
   float: right !important;
 }
 
-.hdlsz{
+.hdlsz {
   margin-bottom: 0px !important;
 }
-
 
 .presaleMinMaxWrapper {
   margin-left: 0px !important;
@@ -2593,7 +2597,7 @@ input[type="number"] {
   margin: 0px !important;
 }
 
-.MintingIntroSection{
+.MintingIntroSection {
   width: 100% !important;
   height: fit-content;
   margin: 0px !important;
@@ -2602,18 +2606,18 @@ input[type="number"] {
   z-index: 90;
 }
 
-.MintingIntroSectionTitleBox{
+.MintingIntroSectionTitleBox {
   width: 100%;
   height: fit-content;
   display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.MintingIntroSectionTitleBox div{
+.MintingIntroSectionTitleBox div {
   height: 1.5em;
   width: 3px;
   margin-right: 1%;
@@ -2633,18 +2637,18 @@ input[type="number"] {
   animation: move-bg 8s infinite linear;
 }
 
-.MintingIntroSectionTitleBox h5{
+.MintingIntroSectionTitleBox h5 {
   font-family: "CircularMedium";
   font-size: 0.9em;
   color: #fff;
   white-space: nowrap;
 }
 
-.MintingIntroSectionTextBox{
+.MintingIntroSectionTextBox {
   margin-top: 2%;
 }
 
-.MintingIntroSectionTextBoxTitle{
+.MintingIntroSectionTextBoxTitle {
   font-family: "CircularMedium";
   font-size: 2.3em;
   --color-one: #00912b;
@@ -2665,56 +2669,55 @@ input[type="number"] {
   animation: move-bg 8s infinite linear;
 }
 
-.MintingIntroSectionTextBoxText{
-  font-family: 'CircularMedium';
+.MintingIntroSectionTextBoxText {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1.1em;
   font-weight: 500;
   width: 70%;
+  margin-top: 1%;
 }
 
-.MintingIntroSectionIconsBox{
+.MintingIntroSectionIconsBox {
   margin-top: 1%;
   width: fit-content;
   padding: 1% 10%;
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-.MintingIntroSectionIconBox{
+.MintingIntroSectionIconBox {
   display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    align-items: flex-start;
-    padding: 0% 5%;
-    width: 25%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0% 5%;
+  width: 25%;
 }
 
-.MintingIntroSectionIconBox:nth-child(2){
+.MintingIntroSectionIconBox:nth-child(2) {
   padding-top: 10%;
 }
 
-.MintingIntroSectionIconBox:nth-child(4){
+.MintingIntroSectionIconBox:nth-child(4) {
   padding-top: 10%;
 }
 
-.MintingIntroSectionIconBoxIcon{
+.MintingIntroSectionIconBoxIcon {
   margin-bottom: 2%;
-  
 }
 
-.MintingIntroSectionIconBoxTitle{
-  font-family: 'CircularMedium';
+.MintingIntroSectionIconBoxTitle {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1.1em;
-
 }
 
-.MintingIntroSectionIconBoxText{
-  font-family: 'CircularMedium';
+.MintingIntroSectionIconBoxText {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1em;
   font-weight: 400;
@@ -4083,34 +4086,39 @@ input[type="number"] {
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -40vh;
+  margin-top: 0vh;
   position: relative;
 }
 
 .circle1 {
   border: solid 4px #0a6f37;
   border-radius: 50%;
-  height: 180vh;
-  width: 180vh;
+  height: 170vh;
+  width: 170vh;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   animation: pulse 6s ease-in-out infinite;
   animation-delay: 0.7s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 40vh;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .circle2 {
   position: absolute;
   border: solid 4px #fec247;
   border-radius: 50%;
-  height: 170vh;
-  width: 170vh;
-  /*
-    Put top edge and left edge in the center
-   */
-  top: 50%;
+  height: 160vh;
+  width: 160vh;
+  position: absolute;
   left: 50%;
-  margin: -85vh 0px 0px -85vh;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   animation: pulse 6s ease-in-out infinite;
   animation-delay: 0.2s;
 }
@@ -4119,14 +4127,13 @@ input[type="number"] {
   position: absolute;
   border: solid 4px #0a6f37;
   border-radius: 50%;
-  height: 160vh;
-  width: 160vh;
-  /*
-    Put top edge and left edge in the center
-   */
-  top: 50%;
+  height: 150vh;
+  width: 150vh;
+  position: absolute;
   left: 50%;
-  margin: -80vh 0px 0px -80vh;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   animation: pulse 6s ease-in-out infinite;
   animation-delay: 0.5s;
 }
@@ -4135,14 +4142,13 @@ input[type="number"] {
   position: absolute;
   border: solid 4px #fec247;
   border-radius: 50%;
-  height: 150vh;
-  width: 150vh;
-  /*
-    Put top edge and left edge in the center
-   */
-  top: 50%;
+  height: 140vh;
+  width: 140vh;
+  position: absolute;
   left: 50%;
-  margin: -75vh 0px 0px -75vh;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   animation: pulse 6s ease-in-out infinite;
   animation-delay: 0.7s;
 }
@@ -4151,7 +4157,7 @@ input[type="number"] {
   width: 60vw;
   height: 50vh;
   max-height: 80vh;
-  margin-top: -120vh;
+  padding-top: 20vh;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -4241,11 +4247,11 @@ input[type="number"] {
 
 /* second design hero section: */
 
-.headerLogo{
+.headerLogo {
   margin-right: 40%;
 }
 
-.navBox{
+.navBox {
   margin-right: 3%;
 }
 
@@ -4260,7 +4266,7 @@ input[type="number"] {
   border: solid 1px #fff !important;
 }
 
-.newCreateCardsBox{
+.newCreateCardsBox {
   width: 50%;
   display: flex;
   align-items: center;
@@ -4270,7 +4276,7 @@ input[type="number"] {
   align-content: center;
 }
 
-.newCreateCardBox{
+.newCreateCardBox {
   background-color: #fff;
   height: 45vh;
   width: 17vw;
@@ -4279,16 +4285,16 @@ input[type="number"] {
   box-shadow: 0px 0px 20px 5px #00912b;
 }
 
-.newCreateCardBox:nth-child(1){
+.newCreateCardBox:nth-child(1) {
   transform: rotate(-10deg);
 }
 
-.newCreateCardBox:nth-child(2){
+.newCreateCardBox:nth-child(2) {
   margin-left: -20%;
   transform: rotate(5deg);
 }
 
-.newCreateCardBoxImage{
+.newCreateCardBoxImage {
   height: 85%;
   border-radius: 15px;
   background-position: center center;
@@ -4296,24 +4302,22 @@ input[type="number"] {
   background-size: cover;
 }
 
-.imgBx1{
+.imgBx1 {
   background-color: #003811;
   background-image: url("../src/assets/images/landing/CrazyZoo_Gorilla_2222.avif");
 }
 
-.imgBx2{
+.imgBx2 {
   background-color: #ffff47;
   background-image: url("../src/assets/images/landing/CrazyZoo_Lemur_2224.avif");
 }
 
-
-.newCreateTextBox{
+.newCreateTextBox {
   width: 50%;
   height: fit-content;
-  
 }
 
-.newCreateTextBox h5{
+.newCreateTextBox h5 {
   color: #fff;
   font-family: "CircularMedium";
   font-size: 1.1em;
@@ -4363,8 +4367,6 @@ input[type="number"] {
   border-radius: 15px;
   border-color: transparent !important;
 }
-
-
 
 .polygonBtn:hover {
   color: #fff;
@@ -4737,12 +4739,12 @@ input[type="number"] {
   z-index: 9999;
 }
 
-.marqueeImage{
-  width: 7vw; 
+.marqueeImage {
+  width: 7vw;
   height: auto;
 }
 
-.child{
+.child {
   margin-left: 0.5% !important;
   margin-right: 0.5% !important;
 }
@@ -4907,7 +4909,7 @@ body
   background: #292929;
 }
 
-.addPoolBox{
+.addPoolBox {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
@@ -4920,64 +4922,64 @@ body
   justify-content: flex-end;
 }
 
-.addPoolBox Button{
+.addPoolBox Button {
   background-color: #fff;
   color: #020202;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1.2em;
   border-width: 0px !important;
   border-radius: 20px !important;
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: fit-content;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: fit-content;
 }
 
-.addPoolBox Button:hover{
+.addPoolBox Button:hover {
   background-color: #fff !important;
   color: #515151 !important;
 }
 
-.addPoolBox Button svg{
+.addPoolBox Button svg {
   margin-right: 2%;
 }
 
-.LiquidityTitleBar{
+.LiquidityTitleBar {
   width: 100%;
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: fit-content;
-    border-bottom: solid 1px #fff;
-    padding-bottom: 3%;
-    margin-left: auto;
-    margin-right: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.LiquidityTitleBar h5{
+.LiquidityTitleBar h5 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
 }
 
-.LiquidityTitleBar .LiquidityTitle{
+.LiquidityTitleBar .LiquidityTitle {
   color: #fff;
   font-size: 1.5em;
   font-weight: 500;
 }
 
-.LiquidityTitleBar .LiquidityClear{
+.LiquidityTitleBar .LiquidityClear {
   color: #03240c;
   font-size: 1em;
   font-weight: 500;
 }
 
-.newPositionDataBox{
+.newPositionDataBox {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -4986,23 +4988,23 @@ body
   padding-bottom: 2%;
 }
 
-.setPairBox{
+.setPairBox {
   width: 50%;
   padding: 1% 3%;
 }
 
-.setRangeBox{
+.setRangeBox {
   width: 50%;
   padding: 1% 5%;
 }
 
-.rangeTitle{
-  font-family: 'CircularMedium';
+.rangeTitle {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1.2em;
 }
 
-.positionChartBox{
+.positionChartBox {
   width: 100%;
   height: fit-content;
   padding: 5% 1%;
@@ -5011,14 +5013,14 @@ body
   align-items: center;
 }
 
-.positionChartBoxTitle{
-  font-family: 'CircularMedium';
+.positionChartBoxTitle {
+  font-family: "CircularMedium";
   color: #bebebe;
   font-size: 1.6em;
   text-align: center;
 }
 
-.minMaxBox{
+.minMaxBox {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -5031,19 +5033,7 @@ body
   margin-top: 3%;
 }
 
-.liquidityMinBox{
-  width: 47% !important;
-  height: fit-content;
-  padding: 2% 0px;
-  border: solid 1px #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.liquidityMaxBox{
+.liquidityMinBox {
   width: 47% !important;
   height: fit-content;
   padding: 2% 0px;
@@ -5054,7 +5044,18 @@ body
   align-items: center;
 }
 
-.minBox{
+.liquidityMaxBox {
+  width: 47% !important;
+  height: fit-content;
+  padding: 2% 0px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minBox {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -5064,7 +5065,7 @@ body
   margin-right: auto;
 }
 
-.maxBox{
+.maxBox {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -5074,7 +5075,7 @@ body
   margin-right: auto;
 }
 
-.minBox button{
+.minBox button {
   background-color: #fff;
   border-width: 0px !important;
   color: #020202;
@@ -5087,20 +5088,20 @@ body
   align-items: center;
 }
 
-.minBox button:hover{
+.minBox button:hover {
   background-color: #fff;
   border-width: 0px !important;
   color: #6a6a6a;
 }
 
-.minBox input{
+.minBox input {
   background-color: transparent !important;
   border-width: 0px !important;
   color: #020202;
   text-align: center !important;
 }
 
-.maxBox button{
+.maxBox button {
   background-color: #fff;
   border-width: 0px !important;
   color: #020202;
@@ -5113,28 +5114,28 @@ body
   align-items: center;
 }
 
-.maxBox button:hover{
+.maxBox button:hover {
   background-color: #fff;
   border-width: 0px !important;
   color: #6a6a6a;
 }
 
-.maxBox input{
+.maxBox input {
   background-color: transparent !important;
   border-width: 0px !important;
   color: #020202;
   text-align: center !important;
 }
 
-.minmaxBoxTitle{
-  font-family: 'CircularMedium';
+.minmaxBoxTitle {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1.1em;
   margin: 0px !important;
 }
 
-.minmaxBoxCoins{
-  font-family: 'CircularMedium';
+.minmaxBoxCoins {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1em;
   font-weight: 500;
@@ -5142,14 +5143,14 @@ body
   margin: 0px !important;
 }
 
-.fullRangeBtnBox{
+.fullRangeBtnBox {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
 }
 
-.fullRangeBtn{
+.fullRangeBtn {
   border: solid 1px #fff;
   background-color: transparent !important;
   border-radius: 10px;
@@ -5157,18 +5158,18 @@ body
   padding-bottom: 2% !important;
   width: 100%;
   color: #fff;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1em;
   font-weight: 400;
 }
 
-.fullRangeBtn:hover{
+.fullRangeBtn:hover {
   background-color: #fff !important;
   border: solid 1px #fff !important;
   color: #6c6c6c;
 }
 
-.pairButtonsBox{
+.pairButtonsBox {
   width: 100%;
   padding-top: 2%;
   display: flex;
@@ -5177,8 +5178,7 @@ body
   justify-content: space-between;
 }
 
-
-.pairFromBtn{
+.pairFromBtn {
   width: 47%;
   height: fit-content !important;
   padding-top: 2% !important;
@@ -5186,7 +5186,7 @@ body
   background-color: transparent;
   border: solid 1px #fff;
   border-radius: 15px;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1.2em;
   font-weight: 500;
   display: flex;
@@ -5195,19 +5195,19 @@ body
   align-items: center;
 }
 
-.pairFromBtn:hover{
+.pairFromBtn:hover {
   background-color: #fff;
   color: #bebebe;
   border: solid 1px #fff !important;
 }
 
-.pairFromBtn:focus{
+.pairFromBtn:focus {
   background-color: #fff;
   color: #bebebe;
   border: solid 1px #c7c7c7 !important;
 }
 
-.pairToBtn{
+.pairToBtn {
   width: 47%;
   height: fit-content !important;
   padding-top: 2% !important;
@@ -5215,7 +5215,7 @@ body
   background-color: transparent;
   border: solid 1px #fff;
   border-radius: 15px;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1.2em;
   font-weight: 500;
   display: flex;
@@ -5224,19 +5224,19 @@ body
   align-items: center;
 }
 
-.pairToBtn:hover{
+.pairToBtn:hover {
   background-color: #fff;
   color: #bebebe;
   border: solid 1px #fff !important;
 }
 
-.pairToBtn:focus{
+.pairToBtn:focus {
   background-color: #fff;
   color: #bebebe;
   border: solid 1px #c7c7c7 !important;
 }
 
-.freeTierBox{
+.freeTierBox {
   width: 100%;
   height: fit-content;
   border: solid 1px #fff;
@@ -5249,23 +5249,23 @@ body
   margin-top: 3%;
 }
 
-.freeTierTextBox{
+.freeTierTextBox {
   display: flex;
   flex-direction: column;
 }
 
-.freeTierText{
-  font-family: 'CircularMedium';
+.freeTierText {
+  font-family: "CircularMedium";
   font-size: 1.3em;
   color: #fff;
   margin-top: 0px !important;
   margin-bottom: 10% !important;
 }
 
-.freeTierSpan{
+.freeTierSpan {
   background-color: #fff;
   border-radius: 10px;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 0.9em;
   color: #020202;
   font-weight: 500;
@@ -5275,25 +5275,25 @@ body
   margin: 0px !important;
 }
 
-.freeTierBox button{
+.freeTierBox button {
   background-color: #fff;
   border: solid 1px #fff;
   color: #020202;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1.2em;
   border-radius: 15px;
 }
 
-.freeTierBox button:hover{
+.freeTierBox button:hover {
   background-color: #fff;
   border: solid 1px #fff !important;
   color: #bebebe;
-  font-family: 'CircularMedium';
+  font-family: "CircularMedium";
   font-size: 1.2em;
   border-radius: 15px;
 }
 
-.fromAmountBox{
+.fromAmountBox {
   margin-top: 2%;
   width: 100%;
   height: fit-content;
@@ -5306,17 +5306,17 @@ body
   border-radius: 15px;
 }
 
-.fromAmountInput{
+.fromAmountInput {
   font-size: 1.5em !important;
   font-weight: 600 !important;
 }
 
-.fromAmountInput::placeholder{
+.fromAmountInput::placeholder {
   color: #fff !important;
 }
 
-.convertedFromAmount{
-  font-family: 'CircularMedium';
+.convertedFromAmount {
+  font-family: "CircularMedium";
   color: #fff;
   font-size: 1.2em;
   font-weight: 500;
@@ -5358,7 +5358,6 @@ body
   backdrop-filter: blur(7.5px);
   border-radius: 25px;
   overflow: hidden;
-
 }
 
 .search-label {
@@ -5677,4 +5676,385 @@ input:checked + .slider:before {
   /* flex-direction: row; */
   flex-wrap: wrap;
   column-gap: 20px;
+}
+
+.mobileMenuBtn {
+  display: none;
+}
+
+.mobileOnlyBtns{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 780px) {
+
+  .mobileOnlyBtns{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .mobileOnlyBtns .ctaWrapper{
+    visibility: visible;
+    width: 100% !important;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .mobileOnlyBtns .ctaWrapper button{
+    width: 50% !important;
+    padding: 1vw 4vw !important;
+    margin-bottom: 3%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .privateSaleInputWrapper{
+    margin-top: 50px !important;
+  }
+
+  .headerWrapper {
+    height: fit-content;
+    box-shadow: 0px 10px 20px 5px #000000;
+    width: 100vw;
+    padding: 1.5% 2%;
+    justify-content: flex-start;
+  }
+
+  .headerLogo {
+    margin: 0px;
+  }
+
+  #logo_header {
+    height: 6vh !important;
+    width: auto !important;
+  }
+
+  .ctaWrapper {
+    visibility: hidden;
+  }
+
+  .heroSection {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-size: cover !important;
+    margin-top: 0px !important;
+    padding-top: 25vh !important;
+  }
+
+  .blackSeperator {
+    width: 100%;
+    height: 5vh;
+    background-color: #030303;
+    position: relative;
+    box-shadow: #030303 0px 0px 60px 80px;
+  }
+
+  .qualities {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .newCreateCardsBox {
+    width: 100% !important;
+    margin-bottom: 15%;
+  }
+
+  .newCreateCardBox {
+    width: 80%;
+    height: 35vh;
+  }
+
+  .newCreateCardBox:nth-child(2) {
+    margin-top: -35vh;
+    margin-left: 5%;
+  }
+
+  .newCreateTextBox {
+    width: 100%;
+  }
+
+  .MintingIntroSectionTextBoxText {
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .MintingIntroSectionIconsBox {
+    margin-left: -5vw;
+    padding: 0px !important;
+    width: 93vw;
+    margin-top: 5%;
+  }
+
+  .MintingIntroSectionIconBox {
+    padding: 0px;
+  }
+
+  .tokenomicsWrapper {
+    padding-top: 8%;
+  }
+
+  .marqueeImage {
+    width: 25vw;
+    height: auto;
+  }
+
+  .marquee-container {
+    margin-top: 15%;
+    padding-bottom: 20%;
+  }
+
+  .dappCommunityWrapper {
+    height: 80vh;
+    padding-bottom: 20vh;
+  }
+
+  .circlesWrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: -95vh !important;
+    padding-top: 5vh !important;
+  }
+
+  .circle1 {
+    height: 80vh;
+    width: 80vh;
+    margin-top: 30vh;
+  }
+
+  .circle2 {
+    height: 70vh;
+    width: 70vh;
+  }
+
+  .circle3 {
+    height: 60vh;
+    width: 60vh;
+  }
+
+  .circle4 {
+    height: 50vh;
+    width: 50vh;
+  }
+
+  .communityTextWrapper {
+    margin-top: 5vh;
+    width: 95% !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-top: 0px !important;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .communityTitle {
+    font-size: 2em;
+    width: 100% !important;
+  }
+
+  .communitySubtitle {
+    margin-top: 3%;
+  }
+
+  .communityIconsWrapper {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10% !important;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .partnersWrapper {
+    padding-bottom: 10%;
+  }
+
+  .zooCopyrights {
+    margin-bottom: 3vh;
+  }
+
+  .navBox {
+    display: none;
+  }
+
+  .heroTextWrapper {
+    height: 5vh;
+  }
+
+  .mobileMenuBtn {
+    display: block;
+    position: absolute;
+    right: 4vw;
+    top: 5.5vw;
+  }
+
+  .menu-wrap {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    height: fit-content !important;
+    width: 100vw !important;
+    padding-bottom: 3% !important;
+    background-color: #030303 !important;
+  }
+
+  .menu {
+    background-color: #030303 !important;
+  }
+
+  .close-icon svg {
+    filter: invert(1) brightness(1);
+  }
+
+  .bm-item {
+    font-family: "CircularMedium";
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #030303 !important;
+  }
+  
+  .presalePageContainer{
+    height: fit-content !important;
+    max-height: none !important;
+  }
+  .presaleLeaves1, .presaleLeaves5, .presaleLeaves8, .presaleLeaves7, .referralLemur, .referralGorilla, .referralRhino{
+    display: none !important;
+  }
+
+  .presaleBoxWrapper{
+    position: relative;
+    left: 0% !important;
+    top: 0% !important;
+    transform: none !important;
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 99;
+    padding: 5% 0px !important;
+    margin: 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presaleBoxLeft{
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .presaleSocialLinksWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .presaleWhitepaperLabel{
+    text-align: left;
+    width: 100%;
+  }
+
+  .presaleSocialBtnsWrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+
+  .presaleWhitepaperWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .presaleBoxRight{
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-left: auto !important;
+    padding: 3% !important;
+  }
+
+  .Countdown{
+    flex-wrap: nowrap !important;
+  }
+
+  .presaleTokenPrice{
+    justify-content: center !important;
+  }
+
+  .presaleTokenPriceLabel{
+    margin-bottom: 10px !important;
+  }
+
+  .presaleAddressGlassBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .referralRewardsWithdrawWrapper{
+    max-width: none !important;
+    width: fit-content !important;
+  }
+
+  .referralRewardsWithdrawBtn{
+    height: 100% !important;
+    background: #b4dc82;
+    box-shadow: 0px 0px 24px #b4dc82;
+    border-radius: 5px;
+    font-family: "Chaloops";
+    color: #fff;
+    border-width: 0px;
+    width: 100% !important;
+    max-width: none !important;
+    margin: auto !important;
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+
+  .referralRewardsWrapper{
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .roadmapItemsRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .roadmapItem{
+    max-width: none !important;
+    width: 100% !important;
+    margin-bottom: 5%;
+  }
+
+  .roadmapWrapper{
+    padding-top: 20vh !important;
+  }
+
 }
